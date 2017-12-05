@@ -62,6 +62,7 @@ This will start your server at https://localhost:3000
 - Robust MySql for user storing and mass IM sending.
 
 ### Messaging Platforms
+
 ---
 - ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram](docs/Telegram.md)**
 - ![Skype](/screenshots/skype/32x32.png?raw=true "Telegram") **MS Skype**
