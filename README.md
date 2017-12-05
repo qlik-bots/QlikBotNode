@@ -61,13 +61,13 @@ This will start your server at https://localhost:3000
 
 ### Messaging Platforms
 ---
-- ##### [Telegram](docs/Telegram.md)
-- ##### MS Skype
-- ##### MS Teams
-- ##### MS Cortana
-- ##### Slack
-- ##### Google Assistant
-- ##### Amazon's Alexa
+- ### [Telegram](docs/Telegram.md)
+- ### MS Skype
+- ### MS Teams
+- ### MS Cortana
+- ### Slack
+- ### Google Assistant
+- ### Amazon's Alexa
 ---
 
 ### Contributing
