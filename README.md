@@ -35,9 +35,9 @@ npm install
 ```
 
 - Install all the required Environmental variables for each of the chat platforms.
--- For Windows, go to "Control Panel" -> "System" -> "Advanced System Settings" -> "Environment Variables"
--- For Linux, from your directory (~), type "nano .bash_profile" or "vim .bash_profile" and enter the variables there like 
---- "export TELEGRAM_BOT_TOKEN=######"
+	- For Windows, go to "Control Panel" -> "System" -> "Advanced System Settings" -> "Environment Variables"
+	- For Linux, from your directory (~), type "nano .bash_profile" or "vim .bash_profile" and enter the variables there like 
+		- "export TELEGRAM_BOT_TOKEN=######"
 
 - For Database storage and mass Instant Messaging, create a database and run the files/sensebot.sql
 
@@ -79,7 +79,7 @@ This will start your server at https://localhost:3000
 - All routes are lower case but models are Capitalized
 - No spaces. Set your files to use `Tab Size:4`
 - Do not declare variables that are not used
-- Do not forget console.log() or any other debugging command in your code
+- Do not forget console.log() or any other debugging commands in your code
 - Once committed, do a pull-request for reviewing and merging.
 
 ### Copyright
