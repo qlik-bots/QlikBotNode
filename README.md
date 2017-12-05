@@ -15,9 +15,9 @@ Before continuing, make sure that you have these tools installed:
 - Certificates for running https. If your environment is dev, then you can export from Qlik Sense Enterprise for "localhost" in a "Platform Independent PEM-format". Save them under app/server/certs/localhost/
 ![Exporting Certificates with Sense](/screenshots/general/export-certificates.png?raw=true "Exporting Certificates with Sense")
 - QVFs needed:
--- Helpdesk: This comes with every Qlik Sense Desktop installation. You will find it under C:\Users\{username}\Documents\Qlik\Sense\Apps\Helpdesk Management.qvf
--- Salesforce: https://github.com/yianni-ververis/Salesforce/tree/master/Files
--- Cio Dashboard: https://github.com/yianni-ververis/CIO/tree/master/Files
+	- Helpdesk: This comes with every Qlik Sense Desktop installation. You will find it under C:\Users\{username}\Documents\Qlik\Sense\Apps\Helpdesk Management.qvf
+	- Salesforce: https://github.com/yianni-ververis/Salesforce/tree/master/Files
+	- Cio Dashboard: https://github.com/yianni-ververis/CIO/tree/master/Files
 - Once uploaded to the Qlik Sense Enterprise, get the app ids from the QMC and with the your host DNS put them in the app/server/config.js
 
 And know of at least some of these web technologies:
@@ -61,13 +61,13 @@ This will start your server at https://localhost:3000
 
 ### Messaging Platforms
 ---
-- ### [Telegram](docs/Telegram.md)
-- ### MS Skype
-- ### MS Teams
-- ### MS Cortana
-- ### Slack
-- ### Google Assistant
-- ### Amazon's Alexa
+- **[Telegram](docs/Telegram.md)**
+- **MS Skype**
+- **MS Teams**
+- **MS Cortana**
+- **Slack**
+- **Google Assistant**
+- **Amazon's Alexa**
 ---
 
 ### Files
