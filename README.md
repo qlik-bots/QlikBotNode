@@ -1,4 +1,4 @@
-![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01.png?raw=true "Qlik Sense Bot")
+![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01_200x200.png?raw=true "Qlik Sense Bot")
 
 # QlikBotNode
 - QlikBotNode is a server build in nodejs, expressjs and MySql that connects to chat and media platforms like Telegram, Skype, MS Teams, Cortana, Slack, Google Assistant and Amazon Alexa. 
