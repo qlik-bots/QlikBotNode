@@ -1,4 +1,4 @@
-![Qlik Sense Bot](/screenshots/general/qlik sense bot-V2-01.png?raw=true "Qlik Sense Bot") ![Right Arrow](/screenshots/general/arrow-right_128x128.png?raw=true "Right Arrow") ![Telegram](/screenshots/telegram/128x128.png?raw=true "Telegram")
+![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01.png?raw=true "Qlik Sense Bot") ![Right Arrow](/screenshots/general/arrow-right_128x128.png?raw=true "Right Arrow") ![Telegram](/screenshots/telegram/128x128.png?raw=true "Telegram")
 
 # QlikBotNode 
 
