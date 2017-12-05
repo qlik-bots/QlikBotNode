@@ -1,4 +1,6 @@
-# QlikBotNode ![Qlik Sense Bot](/screenshots/general/QS_Hub_thumb.png?raw=true "Qlik Sense Bot")
+![Qlik Sense Bot](/screenshots/general/QS_Hub_thumb.png?raw=true "Qlik Sense Bot")
+
+# QlikBotNode
 - QlikBotNode is a server build in nodejs, expressjs and MySql that connects to chat and media platforms like Telegram, Skype, MS Teams, Cortana, Slack, Google Assistant and Amazon Alexa. 
 - It connects to MySql and stores the users for a mass messaging at any time
 - Commands, are case sensitive
@@ -62,7 +64,7 @@ This will start your server at https://localhost:3000
 ### Messaging Platforms
 ---
 - ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram](docs/Telegram.md)**
-- **MS Skype**
+- ![Skype](/screenshots/skype/32x32.png?raw=true "Telegram") **MS Skype**
 - **MS Teams**
 - **MS Cortana**
 - **Slack**
