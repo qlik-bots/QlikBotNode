@@ -75,8 +75,11 @@ This will start your server at https://localhost:3000
 
 - Make sure that your working branch is ```v1``` and not ```master``` 
 - Run ```gulp lint``` and make sure the code is without errors and warnings before committing
-- All variables are camelCase but the database fields are with underscore like 'user_id'
+- All variables are camelCase but the database fields are with underscore like `user_id`
 - All routes are lower case but models are Capitalized
+- No spaces. Set your files to use `Tab Size:4`
+- Do not declare variables that are not used
+- Do not forget console.log() or any other debugging command in your code
 - Once committed, do a pull-request for reviewing and merging.
 
 ### Copyright
