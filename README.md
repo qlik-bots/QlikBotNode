@@ -9,7 +9,6 @@
 
 Before continuing, make sure that you have these tools installed:
 
-- Make sure you have completed all of the steps in [Open Source at Qlik](https://github.com/qlik-bots/open-source) or [Open Source at Qlik](https://github.com/qlik-oss/open-source)
 - Node.js >= 7.0
 - MySql >=14
 - Git bash if on Windows
@@ -42,12 +41,12 @@ npm install
 - For Database storage and mass Instant Messaging, create a database and run the files/sensebot.sql
 
 - Then, 
--- for local testing, type gulp or,
--- for production, run the server with [forever.js](https://github.com/foreverjs/forever) by typing 
-```javascript
-forever start foreverConfig.json
-```
--- Make sure you have the right certificates under app/server/certs/production-server/
+	- for local testing, type gulp or,
+	- for production, run the server with [forever.js](https://github.com/foreverjs/forever) by typing 
+	```javascript
+	forever start foreverConfig.json
+	```
+	- Make sure you have the right certificates under app/server/certs/
 
 
 This will start your server at https://localhost:3000
@@ -73,6 +72,7 @@ This will start your server at https://localhost:3000
 
 ### Contributing
 
+- Make sure you have completed all of the steps in [Open Source at Qlik](https://github.com/qlik-bots/open-source) or [Open Source at Qlik](https://github.com/qlik-oss/open-source)
 - Make sure that your working branch is ```v1``` and not ```master``` 
 - Run ```gulp lint``` and make sure the code is without errors and warnings before committing
 - All variables are camelCase but the database fields are with underscore like `user_id`
@@ -83,7 +83,11 @@ This will start your server at https://localhost:3000
 - Once committed, do a pull-request for reviewing and merging.
 
 ### Copyright
+Copyright 2017 QlikTech International AB
 
-Copyright 2017 QlikTech International AB Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License. You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions andlimitations under the License.
+Licensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at    
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, softwaredistributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions andlimitations under the License.
+
