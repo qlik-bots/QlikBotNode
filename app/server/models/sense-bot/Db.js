@@ -1,5 +1,5 @@
 /**
- * @name Model: Db
+ * @module models/sense-bot/Db
  * @author yianni.ververis@qlik.com
  * @param {object} config - The configuration for host, database name, username and password
  * @todo remove the wrapper and have classes communicate directly with models/utilities/DB.js

@@ -1,5 +1,5 @@
 /**
- * @module models/sense-bot/Skype
+ * @module models/sense-bot/Telegram
  * @author yianni.ververis@qlik.com
  * @param {boolean} all - return all of the users in the Database
  * @param {integer} count - Return a total of all the users from the sql query
@@ -14,8 +14,10 @@
 */
 
 const db = require('./Db')
+// const logger = require('../utilities/Logger');
 
-const skype = class {
+
+const telegram = class {
 	constructor(input) {
 		this._input = input
 	}
@@ -23,7 +25,7 @@ const skype = class {
 		let input = {
 			all: (_input.all) ? true : false,
 			count: (_input.count) ? true : false,
-			userUid: (_input.userUid) ? String(_input.userUid) : null,
+			userUid: (_input.userUid) ? _input.userUid : null,
 			limit: (_input.limit) ? String(_input.limit) : null,
 		}
 		return new Promise((resolve, reject) => {
@@ -88,4 +90,4 @@ const skype = class {
 	}
 }
 
-module.exports = skype;
+module.exports = telegram;

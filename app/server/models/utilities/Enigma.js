@@ -1,5 +1,5 @@
 /**
- * @name Model: Enigma
+ * @module models/utilities/Enigma
  * @author yianni.ververis@qlik.com
  * @param {string} host - Qlik Sense DNS
  * @param {string} appId - QVF ID

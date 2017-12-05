@@ -1,5 +1,5 @@
 /**
- * @name Route: telegram
+ * @module routes/api/sense-bot/telegram
  * @author yianni.ververis@qlik.com
  * @todo move the qvfs into a config file
  * @description
@@ -16,6 +16,7 @@ const Markup = require('telegraf/markup')
 var config = require('../../../config.json');
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
+const db = new site.telegram()
 let engine = null;
 
 /**
@@ -255,7 +256,26 @@ bot.action('helpDeskLowPriorityCases', (ctx) => {
 		.catch(error => ctx.reply(`Error: ${error}`))
 })
 
-bot.on('message', (ctx) => ctx.reply('Try /salesforce, /cio or /helpdesk'))
+bot.on('message', (ctx) => {
+	db.userListing({
+		userUid: ctx.update.message.from.id,
+		limit: 1
+	})
+		.then(result => {
+			if (!result.length) {
+				db.userInsert({
+					userUid: ctx.update.message.from.id,
+					username: `${ctx.update.message.from.first_name} ${ctx.update.message.from.last_name}`,
+					channelId: 6,
+					userData: JSON.stringify(ctx.update.message.chat)
+				})
+			}
+		})
+		.catch(error => {
+			site.logger.info(`error: ${error}`, { route: `api/sense-bot/skype` });
+		})
+	ctx.reply('Try /salesforce, /cio or /helpdesk')
+})
 bot.startPolling()
 
 module.exports = router;

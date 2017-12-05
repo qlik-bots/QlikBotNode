@@ -1,5 +1,5 @@
 /**
- * @name Route: api
+ * @module routes/api
  * @author yianni.ververis@qlik.com
  * @description
  * Handle all of the https://{domain}/api/ routes

@@ -1,5 +1,5 @@
 /**
- * @name Model: sense-bot
+ * @module models/sense-bot
  * @author yianni.ververis@qlik.com
  * @description
  * Handle all of models for route sense-bot
