@@ -17,6 +17,8 @@
 - Type `help` to view all of the available commands
 ![Main](/screenshots/telegram/main.png?raw=true "Main")
 
+- So far there are 3 apps, Salesforce, HelpDesk and Cio Dashboard. They all point to mashups under webapps.qlik.com so you can validate.
+
 - Click on the Salesforce button or type `/salesforce`
 ![Salesforce](/screenshots/telegram/salesforce.png?raw=true "Salesforce")
 

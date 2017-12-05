@@ -5,14 +5,15 @@
 	"qvf": {
 		"helpdesk": {
 			"host": "",
-			"appId": "",
+			"appId": ""
 		},
 		"cio": {
 			"host": "",
-			"appId": "",
+			"appId": ""
 		},
 		"salesforce": {
 			"host": "",
-			"appId": "",
-		},
+			"appId": ""
+		}
+	}
 }

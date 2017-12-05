@@ -54,7 +54,7 @@ This will start your server at https://localhost:3000
 
 ### Features
 
-- Build with Operating System agnostic, nodejs. IT can be installed and run in Windows IIS and desktop, Linux and mac
+- Build with Operating System agnostic, nodejs. It can be installed and run in Windows IIS and desktop, Linux and mac
 - Scalable. Sense-bot has its own models and routes. You can add as many as you want in your api server
 - Professional logging solution that records every step into the log and saves the file based on the date. This gives you more flexibility over debugging.
 - Latest Open Source [Enigma.js](https://github.com/qlik-oss/enigma.js) wrapper for the Qlik Sense Engine API
