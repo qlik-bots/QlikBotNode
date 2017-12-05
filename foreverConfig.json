@@ -1,0 +1,17 @@
+// foreverConfig.json
+{
+    // Comments are supported
+    "uid": "DemoSupportServer",
+    "append": true,
+    "watch": true,
+    "debug": true,
+    "verbose": true,
+    "minUptime": 1000,
+    "spinSleepTime": 1000,
+    "script": "app/server/server.js",
+    "path": "./",
+    "timestamp": true,
+    "errFile": "logs/errors.log",
+    "logFile": "logs/server.log",
+    "watchDirectory": "app/server"
+}
