@@ -61,7 +61,7 @@ This will start your server at https://localhost:3000
 
 ### Messaging Platforms
 ---
-- **[Telegram](docs/Telegram.md)**
+- ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram](docs/Telegram.md)**
 - **MS Skype**
 - **MS Teams**
 - **MS Cortana**
