@@ -1,5 +1,5 @@
 /**
- * @name Route: Public Site
+ * @module routes/index
  * @author yianni.ververis@qlik.com
  * @description
  * Handle all of the public front end routes 

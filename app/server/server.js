@@ -1,5 +1,5 @@
 /**
- * @name Main: Server
+ * @module server
  * @author yianni.ververis@qlik.com
  * @description
  * Here is the initialization of the server. We define ports, certificates and error handling

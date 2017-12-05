@@ -1,5 +1,5 @@
 /**
- * @name Route: sense-bot
+ * @module routes/api/sense-bot
  * @author yianni.ververis@qlik.com
  * @description
  * Handle all of the https://{domain}/api/sense-bot/ routes

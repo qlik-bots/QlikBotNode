@@ -1,5 +1,5 @@
 /**
- * @name Model: DB
+ * @module models/utilities/DB
  * @author yianni.ververis@qlik.com
  * @param {object} config - The configuration for host, database name, username and password
  * @description

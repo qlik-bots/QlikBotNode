@@ -1,5 +1,5 @@
 /**
- * @name Model: Logger
+ * @module models/utilities/Logger
  * @author yianni.ververis@qlik.com
  * @param {string} host - Qlik Sense DNS
  * @param {string} appId - QVF ID

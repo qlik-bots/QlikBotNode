@@ -1,5 +1,5 @@
 /**
- * @name Main: App
+ * @module app
  * @author yianni.ververis@qlik.com
  * @description
  * Here is the main logic. We define routes, cors, session and error handling through out the app 

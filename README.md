@@ -70,6 +70,12 @@ This will start your server at https://localhost:3000
 - ### Amazon's Alexa
 ---
 
+### Files
+- [List of all files](docs/files.md)
+
+### Version Log
+- [Log](docs/log.md)
+
 ### Contributing
 
 - Make sure you have completed all of the steps in [Open Source at Qlik](https://github.com/qlik-bots/open-source) or [Open Source at Qlik](https://github.com/qlik-oss/open-source)
@@ -80,6 +86,7 @@ This will start your server at https://localhost:3000
 - No spaces. Set your files to use `Tab Size:4`
 - Do not declare variables that are not used
 - Do not forget console.log() or any other debugging commands in your code
+- When creating new Modules, add jsDoc syntax for `@module {name}`, `@author {your_email@domain.com}` and `@description {your_short_description}`. Then run gulp jsdoc to generate the new files in the docs/files.md
 - Once committed, do a pull-request for reviewing and merging.
 
 ### Copyright
