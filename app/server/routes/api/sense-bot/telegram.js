@@ -13,6 +13,7 @@ const Telegraf = require('telegraf')
 const session = require('telegraf/session')
 const Extra = require('telegraf/extra')
 const Markup = require('telegraf/markup')
+var config = require('../../../config.json');
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN)
 let engine = null;
@@ -21,25 +22,10 @@ let engine = null;
  * Connection parameters for the QVFs
  * @todo move the qvfs into a config file
 */
-let qvf = {
-	helpdesk: {
-		host: '',
-		appId: '',
-	},
-	cio: {
-		host: '',
-		appId: '',
-	},
-	salesforce: {
-		host: '',
-		appId: '',
-	},
-}
+let qvf = config.qvf;
 
-// router.post('/', bot );
 router.post('/', (req, res) => {
 	site.logger.info(`main`, { route: `api/sense-bot/telegram` });
-	// init()
 	res.send({
 		success: true,
 		data: `Bot Started!`
