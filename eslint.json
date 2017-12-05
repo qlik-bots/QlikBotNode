@@ -1,0 +1,16 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 6
+	},
+	"rules": {
+        "no-multi-spaces": "warn",
+        "camelcase": "warn",
+		"curly": 1,
+		"default-case": "error",
+		"no-unused-vars": "warn",
+		"no-use-before-define": "warn",
+		"require-jsdoc": "warn",
+		"indent": ["warn", "tab", { "SwitchCase": 1, "ArrayExpression": 1, "ObjectExpression": 1 }],
+		"no-console": "warn"
+    }
+}
