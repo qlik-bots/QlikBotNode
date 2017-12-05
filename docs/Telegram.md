@@ -14,14 +14,14 @@
 
 ### Usage
 
-- Type help to view all of the available commands
+- Type `help` to view all of the available commands
 ![Main](/screenshots/telegram/main.png?raw=true "Main")
 
-- Click on the Salesforce button or type /salesforce
+- Click on the Salesforce button or type `/salesforce`
 ![Salesforce](/screenshots/telegram/salesforce.png?raw=true "Salesforce")
 
-- Click on the Cio button or type /cio
+- Click on the Cio button or type `/cio`
 ![Salesforce](/screenshots/telegram/cio-dashboard-management.png?raw=true "Salesforce")
 
-- Click on the Helpdesk button or type /helpdesk
+- Click on the Helpdesk button or type `/helpdesk`
 ![Salesforce](/screenshots/telegram/cio-dashboard-management.png?raw=true "Salesforce")
