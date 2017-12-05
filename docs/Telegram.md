@@ -1,6 +1,8 @@
-# QlikBotNode ![Qlik Sense Bot](/screenshots/general/QS_Hub_thumb.png?raw=true "Qlik Sense Bot")
+![Qlik Sense Bot](/screenshots/general/QS_Hub_thumb.png?raw=true "Qlik Sense Bot") ![Right Arrow](/screenshots/general/arrow-right-outline_128x128.png?raw=true "Right Arrow") ![Telegram](/screenshots/telegram/128x128.png?raw=true "Telegram")
 
-## Telegram ![Telegram](/screenshots/telegram/128x128.png?raw=true "Telegram")
+# QlikBotNode 
+
+## Telegram
 
 ### Installation
 
