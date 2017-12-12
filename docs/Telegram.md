@@ -7,6 +7,7 @@
 ### Live Demo
 
 - To view and interact with a live demo, go to "http://t.me/qlik_sense_nodejs_bot"
+- Go to [Usage](#usage) for all of the available commands. You can skip [Installation](#installation)
 
 ### Installation
 
