@@ -4,6 +4,10 @@
 
 ## Telegram
 
+### Live Demo
+
+- To view and interact with a live demo, go to "http://t.me/qlik_sense_nodejs_bot"
+
 ### Installation
 
 - Go to the "BotFather" contact
@@ -12,7 +16,6 @@
 - BotFather will generate a token. Use this in your environment variable as `TELEGRAM_BOT_TOKEN` [How-to](https://github.com/qlik-bots/QlikBotNode#usage)
 - From there you can edit the Contact name as it will appear in the contact list, add a short description, upload an icon and add some of the available commands
 ![Settings](/screenshots/telegram/settings.png?raw=true "Settings")
-- To view and interact with a live demo, go to "http://t.me/qlik_sense_nodejs_bot"
 
 ### Usage
 
