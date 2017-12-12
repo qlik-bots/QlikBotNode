@@ -92,7 +92,13 @@ This will start your server at https://localhost:3000
 - When creating new Modules, add jsDoc syntax for `@module {name}`, `@author {your_email@domain.com}` and `@description {your_short_description}`. Then run gulp jsdoc to generate the new files in the docs/files.md
 - Once committed, do a pull-request for reviewing and merging.
 
+### Follow us on
+
+- [Slack](http://branch.qlik.com/slack)
+- [Community](https://community.qlik.com/groups/qlik-chatbots)
+
 ### Copyright
+
 Copyright 2017 QlikTech International AB
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at    
