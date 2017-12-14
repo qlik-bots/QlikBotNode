@@ -1,5 +1,10 @@
 ![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01_200x200.png?raw=true "Qlik Sense Bot")
 
+[![version](http://img.shields.io/badge/version-1.1-brightgreen.svg?style=plastic)]()
+[![node](http://img.shields.io/badge/node->=7.0.0-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
+[![npm](http://img.shields.io/badge/npm->=3.10.8-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
+[![MySql](http://img.shields.io/badge/MySql->=14-brightgreen.svg?style=plastic)](https://www.mysql.com/)
+
 # QlikBotNode
 - QlikBotNode is a server build in Node.js, Express.js, Enigma.js and MySql that connects to chat and media platforms like Telegram, Skype, MS Teams, Cortana, Slack, Google Assistant and Amazon Alexa. 
 - It connects to MySql and stores the users for a mass messaging at any time
