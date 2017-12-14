@@ -2,7 +2,7 @@
   "name": "DEMOTEAM4",
   "main": "app/public/index.html",
   "node-main": "app/server/server.js",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "The Demo team Support Server",
   "private": true,
   "scripts": {
