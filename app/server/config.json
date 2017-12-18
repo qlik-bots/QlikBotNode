@@ -15,5 +15,282 @@
 			"host": "",
 			"appId": ""
 		}
+	},
+	"text": {
+		"en": {
+			"title": "English",
+			"welcome": "Hello %s and Welcome to Qlik Sense Bot.<br>Thanks for adding me into your contacts.<br>Type 'help' for all available commands.",
+			"viewDemo": "View Demo",
+			"actions": "Select one of the actions below:",
+			"no_command": "Command '%s', does not exist",
+			"help": {
+				"title": "Help",
+				"text": "Please select one of the available apps below, or change your language."
+			},
+			"exit": {
+				"button": "Exit",
+				"text": "Goodbye!"
+			},
+			"language": {
+				"button": "Language",
+				"text": "Select one the below available languages:",
+				"set": "Your language has been set to English"
+			},
+			"salesforce": {
+				"title": "Salesforce",
+				"welcome": "Welcome to Salesforce",
+				"dashboard": {
+					"button": "Dashboard",
+					"text": "**Salesforce - Dashboard** \n\n OPEN OPPS VALUE: **%s** \n\n OPEN OPPS: **%s** \n\n NEW CUSTOMERS: **%s** \n\n EXISTING CUSTOMERS: **%s** \n\n WIN RATE: **%s**",
+					"title": "Salesforce - Dashboard",
+					"kpi1": "OPEN OPPS VALUE",
+					"kpi2": "OPEN OPPS",
+					"kpi3": "NEW CUSTOMERS",
+					"kpi4": "EXISTING CUSTOMERS",
+					"kpi5": "WIN RATE"
+				},
+				"opportunities": {
+					"button": "Opportunities",
+					"title": "Salesforce - Opportunities",
+					"text": "**Salesforce - Opportunities** \n\n OPEN OPPS VALUE: **%s** \n\n OPEN OPPS: **%s** \n\n CLOSED WON OPPS VALUE: **%s** \n\n CLOSED WON OPPS: **%s** \n\n CLOSED LOST oPPS VALUE: **%s**, WIN RATE: **%s**",
+					"kpi1": "OPEN OPPS VALUE",
+					"kpi2": "OPEN OPPS",
+					"kpi3": "CLOSED WON OPPS VALUE",
+					"kpi4": "CLOSED WON OPPS",
+					"kpi5": "CLOSED LOST oPPS VALUE",
+					"kpi6": "CLOSED LOST OPPS",
+					"kpi7": "WIN RATE"
+				}
+			},
+			"cio": {
+				"title": "CIO Dashboard",
+				"welcome": "Welcome to CIO Dashboard",
+				"management": {
+					"button": "Management",
+					"title": "CIO Dashboard - Management",
+					"kpi1": "2016 Cost YTD",
+					"kpi2": "vs Budget YTD",
+					"kpi3": "Diff",
+					"kpi4": "Service Level",
+					"kpi5": "Service Level Goal",
+					"kpi6": "Diff"
+				},
+				"customer": {
+					"button": "Customer Service",
+					"title": "CIO Dashboard - Customer Service",
+					"kpi1": "Grade YTD",
+					"kpi2": "Grade Target",
+					"kpi3": "Diff",
+					"kpi4": "Resolved Tickets",
+					"kpi5": "Open Tickets",
+					"kpi6": "Avg Resolution Time (hrs)",
+					"kpi7": "Resolution Time Target (hrs)",
+					"kpi8": "Diff"
+				}
+			},
+			"helpdesk": {
+				"title": "Helpdesk",
+				"welcome": "Welcome to HelpDesk. Click on a button or type any of the following commands: ",
+				"highPriorityCases": {
+					"button": "High Priority Cases",
+					"title": "HelpDesk - High Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of High Priority Cases"
+				},
+				"mediumPriorityCases": {
+					"button": "Medium Priority Cases",
+					"title": "HelpDesk - Medium Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of Medium Priority Cases"
+				},
+				"lowPriorityCases": {
+					"button": "Low Priority Cases",
+					"title": "HelpDesk - Low Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of Low Priority Cases"
+				}
+			}
+		},
+		"el": {
+			"title": "Ελληνικά",
+			"welcome": "Καλώς ήλθατε στο Qlik Sense Bot",
+			"viewDemo": "Δείτε το Demo",
+			"actions": "Επιλέξτε μία απο τις παρακάτω ενέργειες:",
+			"no_command": "Η εντολή '%s' δεν υπάρχει",
+			"help": {
+				"title": "Βοήθεια",
+				"text": "Επιλέξτε μία από τις παρακάτω εφαρμογές ή αλλάξτε τη Γλώσσα επικοινωνίας."
+			},
+			"exit": {
+				"button": "'Εξοδος",
+				"text": "Χαίρεται!"
+			},
+			"language": {
+				"button": "Γλώσσα Επικοινωνίας",
+				"text": "Επίλέξτε μία από τις παρακάτω διαθέσιμες Γλώσσες:",
+				"set": "Η γλώσσα της εφαρμογής άλλαξε στα Ελληνικά"
+			},
+			"salesforce": {
+				"title": "Salesforce",
+				"welcome": "Καλώς ήλθατε στο Salesforce",
+				"dashboard": {
+					"button": "Πίνακας Διαχείρισης",
+					"title": "Salesforce - Πίνακας Διαχείρισης",
+					"text": "**Salesforce - Πίνακας Διαχείρισης** \n\n ΑΞΙΑ ΤΩΝ ΑΝΟΙΚΤΩΝ OPPS: **%s** \n\n ΑΝΟΙΚΤΑ OPPS: **%s** \n\n ΝΕΟΙ ΠΕΛΑΤΕΣ: **%s** \n\n ΥΠΑΡΧΟΝΤΕΣ ΠΕΛΑΤΕΣ: **%s** \n\n ΔΕΙΚΤΗΣ ΕΠΙΤΥΧΙΑΣ ΚΛΕΙΣΙΜΑΤΟΣ: **%s**",
+					"kpi1": "ΑΞΙΑ ΤΩΝ ΑΝΟΙΚΤΩΝ OPPS",
+					"kpi2": "ΑΝΟΙΚΤΑ OPPS",
+					"kpi3": "ΝΕΟΙ ΠΕΛΑΤΕΣ",
+					"kpi4": "ΥΠΑΡΧΟΝΤΕΣ ΠΕΛΑΤΕΣ",
+					"kpi5": "ΔΕΙΚΤΗΣ ΕΠΙΤΥΧΙΑΣ ΚΛΕΙΣΙΜΑΤΟΣ"
+				},
+				"opportunities": {
+					"button": "Ευκαιρίες",
+					"title": "Salesforce - Ευκαιρίες",
+					"text": "**Salesforce - Ευκαιρίες** \n\n ΑΞΙΑ ΤΩΝ ΑΝΟΙΚΤΩΝ OPPS: **%s** \n\n OPEN OPPS: **%s** \n\n CLOSED WON OPPS VALUE: **%s** \n\n CLOSED WON OPPS: **%s** \n\n CLOSED LOST oPPS VALUE: **%s**, WIN RATE: **%s**",
+					"kpi1": "",
+					"kpi2": "ΑΝΟΙΚΤΑ OPPS",
+					"kpi3": "ΑΞΙΑ ΚΛΕΙΣΤΩΝ ΚΕΡΔΙΣΜΕΝΩΝ OPPS",
+					"kpi4": "ΟΛΟΚΛΗΡΩΜΕΝΑ ΚΕΡΔΙΣΜΕΝΑ OPPS",
+					"kpi5": "ΑΞΙΑ ΚΛΕΙΣΤΩΝ ΧΑΜΕΝΩΝ OPPS",
+					"kpi6": "ΚΛΕΙΣΤΑ ΧΑΜΕΝΑ OPPS",
+					"kpi7": "ΔΕΙΚΤΗΣ ΕΠΙΤΥΧΙΑΣ ΚΛΕΙΣΙΜΑΤΟΣ"
+				}
+			},
+			"cio": {
+				"title": "CIO Dashboard",
+				"welcome": "Καλώς ήλθατε στο CIO",
+				"management": {
+					"button": "Διαχείριση",
+					"title": "CIO Dashboard - Διαχείριση",
+					"kpi1": "2016 Κόστος YTD",
+					"kpi2": "vs Προυπολογισμό YTD",
+					"kpi3": "Διαφορά",
+					"kpi4": "Επίπεδο Service",
+					"kpi5": "Στόχος Επιπέδου Εξυπηρέτησης",
+					"kpi6": "Diff"
+				},
+				"customer": {
+					"button": "Εξυπηρέτηση Πελατών",
+					"title": "CIO Dashboard - Customer Service",
+					"kpi1": "Βαθμός YTD",
+					"kpi2": "Στόχος Βαθμού",
+					"kpi3": "Διαφορά",
+					"kpi4": "Επιλυμμένα Τικέτα",
+					"kpi5": "Ανοικτά Τικέτα",
+					"kpi6": "Μέσος Όρος Επίλυσης (σε ώρες)",
+					"kpi7": "Ωριαίος Στόχος Επίλυσης (σε ώρες)",
+					"kpi8": "Διαφορά"
+				}
+			},
+			"helpdesk": {
+				"title": "Helpdesk",
+				"welcome": "Καλώς ήλθατε στο HelpDesk. Κάντε κλικ σε ένα απο τα κουμπιά ή πληκτρολογήστε: ",
+				"highPriorityCases": {
+					"button": "Υψηλής Προτεραιότητας Υποθέσεις",
+					"title": "HelpDesk - Υψηλής Προτεραιότητας Υποθέσεις",
+					"kpi1": "Έχουμε",
+					"kpi2": "από της Υψηλής Προτεραιότητας Υποθέσεις"
+				},
+				"mediumPriorityCases": {
+					"button": "Μέσης Προτεραιότητας Υποθέσεις",
+					"title": "HelpDesk - Μέσης Προτεραιότητας Υποθέσεις",
+					"kpi1": "Έχουμε",
+					"kpi2": "από της Μέσης Προτεραιότητας Υποθέσεις"
+				},
+				"lowPriorityCases": {
+					"button": "Χαμηλής Προτεραιότητας Υποθέσεις",
+					"title": "HelpDesk - Χαμηλής Προτεραιότητας Υποθέσεις",
+					"kpi1": "Έχουμε",
+					"kpi2": "από της Χαμηλής Προτεραιότητας Υποθέσεις"
+				}
+			}
+		},
+		"es": {
+			"title": "Español",
+			"welcome": "Hello %s and Welcome to Qlik Sense Bot.<br>Thanks for adding me into your contacts.<br>Type 'help' for all available commands.",
+			"viewDemo": "View Demo",
+			"actions": "Select one of the actions below:",
+			"help": {
+				"title": "Help",
+				"text": "Please select one of the available apps below, or change your language."
+			},
+			"language": {
+				"text": "Select one the below available languages:",
+				"set": "Your language has been set to English"
+			},
+			"salesforce": {
+				"title": "Salesforce",
+				"welcome": "Welcome to Salesforce",
+				"dashboard": {
+					"button": "Dashboard",
+					"title": "Salesforce - Dashboard",
+					"text": "**Salesforce - Dashboard** \n\n OPEN OPPS VALUE: **%s** \n\n OPEN OPPS: **%s** \n\n NEW CUSTOMERS: **%s** \n\n EXISTING CUSTOMERS: **%s** \n\n WIN RATE: **%s**",
+					"kpi1": "OPEN OPPS VALUE",
+					"kpi2": "OPEN OPPS",
+					"kpi3": "NEW CUSTOMERS",
+					"kpi4": "EXISTING CUSTOMERS",
+					"kpi5": "WIN RATE"
+				},
+				"opportunities": {
+					"button": "Opportunities",
+					"title": "Salesforce - Opportunities",
+					"kpi1": "OPEN OPPS VALUE",
+					"kpi2": "OPEN OPPS",
+					"kpi3": "CLOSED WON OPPS VALUE",
+					"kpi4": "CLOSED WON OPPS",
+					"kpi5": "CLOSED LOST oPPS VALUE",
+					"kpi6": "CLOSED LOST OPPS",
+					"kpi7": "WIN RATE"
+				}
+			},
+			"cio": {
+				"title": "CIO Dashboard",
+				"welcome": "Welcome to CIO Dashboard",
+				"management": {
+					"button": "Management",
+					"title": "CIO Dashboard - Management",
+					"kpi1": "2016 Cost YTD",
+					"kpi2": "vs Budget YTD",
+					"kpi3": "Diff",
+					"kpi4": "Service Level",
+					"kpi5": "Service Level Goal",
+					"kpi6": "Diff"
+				},
+				"customer": {
+					"button": "Customer Service",
+					"title": "CIO Dashboard - Customer Service",
+					"kpi1": "Grade YTD",
+					"kpi2": "Grade Target",
+					"kpi3": "Diff",
+					"kpi4": "Resolved Tickets",
+					"kpi5": "Open Tickets",
+					"kpi6": "Avg Resolution Time (hrs)",
+					"kpi7": "Resolution Time Target (hrs)",
+					"kpi8": "Diff"
+				}
+			},
+			"helpdesk": {
+				"title": "Helpdesk",
+				"welcome": "Welcome to HelpDesk. Click on a button or type any of the following commands: ",
+				"highPriorityCases": {
+					"button": "High Priority Cases",
+					"title": "HelpDesk - High Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of High Priority Cases"
+				},
+				"mediumPriorityCases": {
+					"button": "Medium Priority Cases",
+					"title": "HelpDesk - Medium Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of Medium Priority Cases"
+				},
+				"lowPriorityCases": {
+					"button": "Low Priority Cases",
+					"title": "HelpDesk - Low Priority Cases",
+					"kpi1": "We have",
+					"kpi2": "of Low Priority Cases"
+				}
+			}
+		}
 	}
 }
