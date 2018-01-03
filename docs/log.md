@@ -2,6 +2,7 @@
 
 ### Log
 
+- 1.1.7 fixed telegram route issues. Added try catch everywhere. Added multilingual
 - 1.1.4 Telegram Model to ES7
 - 1.1.3 sense-bot/Db convert to Class 
 - 1.1.2 utilities/DB Class to ES7
