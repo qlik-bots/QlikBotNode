@@ -13,23 +13,24 @@
  * The main Model for all of the Microsoft Channels. Stores and retrieves users from the database
 */
 
-const db = require('./Db')
-// const logger = require('../utilities/Logger');
+const DbClass = require('./Db')
+const logger = require('../utilities/Logger');
 
 
 const telegram = class {
 	constructor(input) {
 		this._input = input
 	}
-	userListing(_input) {
-		let input = {
-			all: (_input.all) ? true : false,
-			count: (_input.count) ? true : false,
-			userUid: (_input.userUid) ? _input.userUid : null,
-			limit: (_input.limit) ? String(_input.limit) : null,
-		}
-		return new Promise((resolve, reject) => {
-			const sqlQuery = {
+	async userListing(_input) {
+		try {
+			let db = await new DbClass();
+			let input = {
+				all: (_input.all) ? true : false,
+				count: (_input.count) ? true : false,
+				userUid: (_input.userUid) ? _input.userUid : null,
+				limit: (_input.limit) ? String(_input.limit) : null,
+			}
+			const sql = {
 				select: [],
 				from: ['user u'],
 				where: [],
@@ -37,35 +38,36 @@ const telegram = class {
 				limit: [],
 			}
 			if (input.all) {
-				sqlQuery.select.push('u.*')
+				sql.select.push('u.*')
 			}
 			if (input.userUid) {
-				sqlQuery.select.push('u.*')
-				sqlQuery.where.push(`u.user_uid='${input.userUid}'`)
+				sql.select.push('u.*')
+				sql.where.push(`u.user_uid='${input.userUid}'`)
 			}
 			if (input.limit) {
-				sqlQuery.limit.push(input.limit)
+				sql.limit.push(input.limit)
 			}
 			if (input.count) {
-				sqlQuery.select.push('COUNT(*) AS total')
+				sql.select.push('COUNT(*) AS total')
 			}
-			db.get(sqlQuery)
-				.then((results) => {
-					resolve(results)
-				})
-				.catch((error) => {
-					reject(error)
-				})
-		})
+			let results = await db.get(sql)
+			return results;
+		}	
+		catch (error) {
+			logger.info(`error: ${error}`, { model: `models/sense-bot/Telegram::userListing()` });
+			return error;
+		}
 	}
-	userInsert(_input) {
-		let input = {
-			userUid: (_input.userUid) ? String(db.escape(_input.userUid)) : null,
-			username: (_input.username) ? String(db.escape(_input.username)) : null,
-			channelId: (_input.channelId) ? Number(db.escape(_input.channelId)) : 1,
-			userData: (_input.userData) ? String(db.escape(_input.userData)) : null
-		};
-		return new Promise((resolve, reject) => {
+
+	async userInsert(_input) {
+		try {
+			let db = await new DbClass();
+			let input = {
+				userUid: (_input.userUid) ? String(db.escape(_input.userUid)) : null,
+				username: (_input.username) ? String(db.escape(_input.username)) : null,
+				channelId: (_input.channelId) ? Number(db.escape(_input.channelId)) : 1,
+				userData: (_input.userData) ? String(db.escape(_input.userData)) : null
+			};
 			let sql = `
 				INSERT INTO user (
 					user_uid,
@@ -79,14 +81,13 @@ const telegram = class {
 					${input.userData}
 				)
 			`;
-			db.put(sql)
-				.then((results) => {
-					resolve(results)
-				})
-				.catch((error) => {
-					reject(error)
-				})
-		})
+			let results = await db.put(sql)
+			return results;
+		}	
+		catch (error) {
+			logger.info(`error: ${error}`, { model: `models/sense-bot/Telegram::userInsert()` });
+			return error;
+		}
 	}
 }
 
