@@ -34,7 +34,7 @@
 			"language": {
 				"button": "Language",
 				"text": "Select one the below available languages:",
-				"set": "Your language has been set to English"
+				"set": "Your language has been set to **English**"
 			},
 			"salesforce": {
 				"title": "Salesforce",
@@ -68,6 +68,7 @@
 				"management": {
 					"button": "Management",
 					"title": "CIO Dashboard - Management",
+					"text": "**CIO Dashboard - Management** \n\n 2016 Cost YTD: **%s** \n\n vs Budget YTD: **%s** \n\n Diff: **%s** \n\n Service Level: **%s** \n\n Service Level Goal: **99.70** \n\n Diff: **%s**",
 					"kpi1": "2016 Cost YTD",
 					"kpi2": "vs Budget YTD",
 					"kpi3": "Diff",
@@ -78,6 +79,7 @@
 				"customer": {
 					"button": "Customer Service",
 					"title": "CIO Dashboard - Customer Service",
+					"text": "**CIO Dashboard - Customer Service** \n\n Grade YTD: **%s** \n\n Grade Target: **3.75** \n\n Diff: **%s** \n\n Resolved Tickets: **%s** \n\n Open Tickets: **%s** \n\n Avg Resolution Time (hrs): **%s** \n\n Resolution Time Target (hrs): **%s** \n\n Diff: **%s**",
 					"kpi1": "Grade YTD",
 					"kpi2": "Grade Target",
 					"kpi3": "Diff",
@@ -94,18 +96,21 @@
 				"highPriorityCases": {
 					"button": "High Priority Cases",
 					"title": "HelpDesk - High Priority Cases",
+					"text": "We have **%s** of High Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of High Priority Cases"
 				},
 				"mediumPriorityCases": {
 					"button": "Medium Priority Cases",
 					"title": "HelpDesk - Medium Priority Cases",
+					"text": "We have **%s** of Medium Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of Medium Priority Cases"
 				},
 				"lowPriorityCases": {
 					"button": "Low Priority Cases",
 					"title": "HelpDesk - Low Priority Cases",
+					"text": "We have **%s** of Low Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of Low Priority Cases"
 				}
@@ -123,12 +128,12 @@
 			},
 			"exit": {
 				"button": "'Εξοδος",
-				"text": "Χαίρεται!"
+				"text": "Αντίο!"
 			},
 			"language": {
 				"button": "Γλώσσα Επικοινωνίας",
 				"text": "Επίλέξτε μία από τις παρακάτω διαθέσιμες Γλώσσες:",
-				"set": "Η γλώσσα της εφαρμογής άλλαξε στα Ελληνικά"
+				"set": "Η γλώσσα της εφαρμογής άλλαξε στα **Ελληνικά**"
 			},
 			"salesforce": {
 				"title": "Salesforce",
@@ -162,6 +167,7 @@
 				"management": {
 					"button": "Διαχείριση",
 					"title": "CIO Dashboard - Διαχείριση",
+					"text": "**CIO Dashboard - Διαχείριση** \n\n 2016 Κόστος YTD: **%s** \n\n vs Προυπολογισμό YTD: **%s** \n\n Διαφορά: **%s** \n\n Επίπεδο Service: **%s** \n\n Στόχος Επιπέδου Εξυπηρέτησης: **99.70** \n\n Διαφορά: **%s**",
 					"kpi1": "2016 Κόστος YTD",
 					"kpi2": "vs Προυπολογισμό YTD",
 					"kpi3": "Διαφορά",
@@ -172,6 +178,7 @@
 				"customer": {
 					"button": "Εξυπηρέτηση Πελατών",
 					"title": "CIO Dashboard - Customer Service",
+					"text": "**CIO Dashboard - Customer Service** \n\n Βαθμός YTD: **%s** \n\n Στόχος Βαθμού: **3.75** \n\n Διαφορά: **%s** \n\n Επιλυμμένα Τικέτα: **%s** \n\n Ανοικτά Τικέτα: **%s** \n\n Μέσος Όρος Επίλυσης (σε ώρες): **%s** \n\n Ωριαίος Στόχος Επίλυσης (σε ώρες): **%s** \n\n Διαφορά: **%s**",
 					"kpi1": "Βαθμός YTD",
 					"kpi2": "Στόχος Βαθμού",
 					"kpi3": "Διαφορά",
@@ -188,18 +195,21 @@
 				"highPriorityCases": {
 					"button": "Υψηλής Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Υψηλής Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Υψηλής Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Υψηλής Προτεραιότητας Υποθέσεις"
 				},
 				"mediumPriorityCases": {
 					"button": "Μέσης Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Μέσης Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Μέσης Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Μέσης Προτεραιότητας Υποθέσεις"
 				},
 				"lowPriorityCases": {
 					"button": "Χαμηλής Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Χαμηλής Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Χαμηλής Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Χαμηλής Προτεραιότητας Υποθέσεις"
 				}
@@ -215,8 +225,9 @@
 				"text": "Selecciona una de las apps disponibles o cambia el idioma del bot."
 			},
 			"language": {
+				"button": "Idioma",
 				"text": "Selecciona uno de los idiomas:",
-				"set": "Se ha establecido el Español como idioma"
+				"set": "Se ha establecido el **Español** como idioma"
 			},
 			"salesforce": {
 				"title": "Salesforce",
@@ -249,6 +260,7 @@
 				"management": {
 					"button": "Management",
 					"title": "CIO Dashboard - Management",
+					"text": "**CIO Dashboard - Management** \n\n 2016 Cost YTD: **%s** \n\n vs Budget YTD: **%s** \n\n Diff: **%s** \n\n Service Level: **%s** \n\n Service Level Goal: **99.70** \n\n Diff: **%s**",
 					"kpi1": "2016 Coste YTD",
 					"kpi2": "vs Presupuesto YTD",
 					"kpi3": "Diferencia",
@@ -259,6 +271,7 @@
 				"customer": {
 					"button": "Customer Service",
 					"title": "CIO Dashboard - Customer Service",
+					"text": "**CIO Dashboard - Customer Service** \n\n Valoración YTD: **%s** \n\n Objetivo Valoración: **3.75** \n\n Diferencia: **%s** \n\n Tickets resueltos: **%s** \n\n Tickets abiertos: **%s** \n\n Tiempo medio de resolución (hrs): **%s** \n\n Objetivo de tiempo medio de resolución (hrs): **%s** \n\n Diferencia: **%s**",
 					"kpi1": "Valoración YTD",
 					"kpi2": "Objetivo Valoración",
 					"kpi3": "Diferencia",
@@ -275,18 +288,21 @@
 				"highPriorityCases": {
 					"button": "Casos prioridad alta",
 					"title": "HelpDesk - Casos prioridad alta",
+					"text": "Tenemos **%s** casos con prioridad Alta",
 					"kpi1": "Tenemos",
 					"kpi2": "casos con prioridad Alta"
 				},
 				"mediumPriorityCases": {
 					"button": "Casos prioridad media",
 					"title": "HelpDesk - Casos prioridad media",
+					"text": "Tenemos **%s** casos con prioridad media",
 					"kpi1": "Tenemos",
 					"kpi2": "casos con prioridad media"
 				},
 				"lowPriorityCases": {
 					"button": "Casos prioridad baja",
 					"title": "HelpDesk - Casos prioridad baja",
+					"text": "Tenemos **%s** casos con prioridad baja",
 					"kpi1": "Tenemos",
 					"kpi2": "casos con prioridad baja"
 				}
