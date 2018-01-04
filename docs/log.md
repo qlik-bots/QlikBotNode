@@ -2,6 +2,8 @@
 
 ### Log
 
+- 1.2.1 Add Microsoft route
+- 1.2.0 Add Microsoft Model
 - 1.1.7 fixed telegram route issues. Added try catch everywhere. Added multilingual
 - 1.1.4 Telegram Model to ES7
 - 1.1.3 sense-bot/Db convert to Class 
