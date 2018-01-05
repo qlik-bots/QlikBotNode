@@ -1,13 +1,12 @@
 /**
- * @module models/sense-bot/Telegram
+ * @name Model: Microsoft
  * @author yianni.ververis@qlik.com
  * @param {boolean} all - return all of the users in the Database
  * @param {integer} count - Return a total of all the users from the sql query
- * @param {integer} userId - get specific user
  * @param {string} userUid - get specific user
  * @param {integer} limit - limit results
  * @param {string} username - Find user
- * @param {integer} channelId - Specific channel
+ * @param {integer} channelId -put specific Channel, skype, telegram etc
  * @param {object} userData - The message specific data for mass Instant Messaging
  * @description
  * The main Model for all of the Microsoft Channels. Stores and retrieves users from the database
@@ -17,7 +16,7 @@ const DbClass = require('./Db')
 const logger = require('../utilities/Logger');
 
 
-const telegram = class {
+const Microsoft = class {
 	constructor(input) {
 		this._input = input
 	}
@@ -52,9 +51,9 @@ const telegram = class {
 			}
 			let results = await db.get(sql)
 			return results;
-		}	
+		}
 		catch (error) {
-			logger.info(`error: ${error}`, { model: `models/sense-bot/Telegram::userListing()` });
+			logger.info(`error: ${error}`, { model: `models/sense-bot/Microsoft::userListing()` });
 			return error;
 		}
 	}
@@ -83,12 +82,12 @@ const telegram = class {
 			`;
 			let results = await db.put(sql)
 			return results;
-		}	
+		}
 		catch (error) {
-			logger.info(`error: ${error}`, { model: `models/sense-bot/Telegram::userInsert()` });
+			logger.info(`error: ${error}`, { model: `models/sense-bot/Microsoft::userInsert()` });
 			return error;
 		}
 	}
 }
 
-module.exports = telegram;
+module.exports = Microsoft;

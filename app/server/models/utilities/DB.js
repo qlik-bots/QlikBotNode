@@ -14,63 +14,83 @@ const db = class {
 		this.input = input;
 		this.connection = null;
 	}
-	connect(input) {
+	async connect(input) {
 		if (!input.host || !input.database || !input.user) {
-			reject('Please enter a valid database connection')
+			return 'Please enter a valid database connection';
 		}
-		return new Promise((resolve, reject) => {
+		try {
 			this.connection = mysql.createConnection(input);
-			this.connection.connect((err) => {
-				if (!err) {
-					resolve(true)
-				} else {
-					logger.error(`Error connecting to '${input.database}' db`, { Error: `${err}` });
-					reject(err)
-				}
-			});
-		})
+			let error = await this.connection.connect()
+			if (!error) {
+				return true;
+			} else {
+				logger.error(`Error connecting to '${input.database}' db`, { Error: `${err}` });
+				return error;
+			}
+		}		
+		catch (error) {
+			logger.info(`error: ${error}`, { model: `models/utilities/DB::connect` });
+			return error;
+		}
 	}
-	disconnect() {
-		return new Promise((resolve) => {
-			resolve(this.connection.end())
-		})
+	async disconnect() {
+		try {
+			await this.connection.end();
+			return true;
+		}		
+		catch (error) {
+			logger.info(`error: ${error}`, { model: `models/utilities/DB::disconnect` });
+			return error;
+		}
 	}
 	query(query) {
 		return new Promise((resolve, reject) => {
-			this.connection.query(query, function (error, results) {
-				if (error) {
-					reject(error);
-				} else {
-					resolve(results);
-				}
-			});
+			try {
+				this.connection.query(query, function (error, results) {
+					if (error) {
+						reject(error);
+					} else {
+						resolve(results);
+					}
+				});
+			}		
+			catch (error) {
+				site.logger.info(`error: ${error}`, { model: `models/utilities/DB::query()` });
+				reject(error)
+			}
 		})
 	}
-	prepare(query) {
-		return new Promise((resolve) => {
-			let sql = (query.select.length > 1) ? 'SELECT ' + query.select.join(', ') + ' ' : 'SELECT ' + query.select.join(' ') + ' '
-			sql += 'FROM ' + query.from.join(' ') + ' '
+	async prepare(query) {
+		try {
+			let sql = (query.select.length > 1) ? 'SELECT ' + query.select.join(', ') + ' ' : 'SELECT ' + query.select.join(' ') + ' ';
+			sql += 'FROM ' + query.from.join(' ') + ' ';
 			if (query.joins) {
-				sql += query.joins.join(' ') + ' '
+				sql += query.joins.join(' ') + ' ';
 			}
 			if (query.where.length) {
-				sql += 'WHERE ' + query.where.join(' AND ') + ' '
+				sql += 'WHERE ' + query.where.join(' AND ') + ' ';
 			}
 			if (query.order.length) {
-				sql += 'ORDER BY ' + query.order.join(', ')
+				sql += 'ORDER BY ' + query.order.join(', ');
 			}
 			if (query.limit && query.limit.length) {
-				sql += 'LIMIT ' + query.limit.join(', ')
+				sql += 'LIMIT ' + query.limit.join(', ');
 			}
-			resolve(sql);
-		})
-			.catch((error) => {
-				logger.error(`error: ${JSON.stringify(error)}`, { model: `DB` });
-				reject(error)
-			});
+			return sql;
+		}		
+		catch (error) {
+			site.logger.info(`error: ${error}`, { model: `models/utilities/DB::prepare` });
+			return error;
+		}
 	}
 	escape(query) {
-		return mysql.escape(query)
+		try {
+			return mysql.escape(query)
+		}		
+		catch (error) {
+			site.logger.info(`error: ${error}`, { model: `models/utilities/DB::escape` });
+			return error;
+		}
 	}
 }
 

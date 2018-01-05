@@ -9,7 +9,7 @@ module.exports = function (gulp, plugins) {
         .pipe(plugins.eslint({configFile: 'eslint.json'}))
         .pipe(plugins.eslint.format())
         .pipe(plugins.eslint.format('junit', process.stdout))
-        .pipe(plugins.eslint.failAfterError());
+        // .pipe(plugins.eslint.failAfterError());
         
     }
 }

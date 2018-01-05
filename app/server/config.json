@@ -34,7 +34,7 @@
 			"language": {
 				"button": "Language",
 				"text": "Select one the below available languages:",
-				"set": "Your language has been set to English"
+				"set": "Your language has been set to **English**"
 			},
 			"salesforce": {
 				"title": "Salesforce",
@@ -68,6 +68,7 @@
 				"management": {
 					"button": "Management",
 					"title": "CIO Dashboard - Management",
+					"text": "**CIO Dashboard - Management** \n\n 2016 Cost YTD: **%s** \n\n vs Budget YTD: **%s** \n\n Diff: **%s** \n\n Service Level: **%s** \n\n Service Level Goal: **99.70** \n\n Diff: **%s**",
 					"kpi1": "2016 Cost YTD",
 					"kpi2": "vs Budget YTD",
 					"kpi3": "Diff",
@@ -78,6 +79,7 @@
 				"customer": {
 					"button": "Customer Service",
 					"title": "CIO Dashboard - Customer Service",
+					"text": "**CIO Dashboard - Customer Service** \n\n Grade YTD: **%s** \n\n Grade Target: **3.75** \n\n Diff: **%s** \n\n Resolved Tickets: **%s** \n\n Open Tickets: **%s** \n\n Avg Resolution Time (hrs): **%s** \n\n Resolution Time Target (hrs): **%s** \n\n Diff: **%s**",
 					"kpi1": "Grade YTD",
 					"kpi2": "Grade Target",
 					"kpi3": "Diff",
@@ -94,18 +96,21 @@
 				"highPriorityCases": {
 					"button": "High Priority Cases",
 					"title": "HelpDesk - High Priority Cases",
+					"text": "We have **%s** of High Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of High Priority Cases"
 				},
 				"mediumPriorityCases": {
 					"button": "Medium Priority Cases",
 					"title": "HelpDesk - Medium Priority Cases",
+					"text": "We have **%s** of Medium Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of Medium Priority Cases"
 				},
 				"lowPriorityCases": {
 					"button": "Low Priority Cases",
 					"title": "HelpDesk - Low Priority Cases",
+					"text": "We have **%s** of Low Priority Cases",
 					"kpi1": "We have",
 					"kpi2": "of Low Priority Cases"
 				}
@@ -123,12 +128,12 @@
 			},
 			"exit": {
 				"button": "'Εξοδος",
-				"text": "Χαίρεται!"
+				"text": "Αντίο!"
 			},
 			"language": {
 				"button": "Γλώσσα Επικοινωνίας",
 				"text": "Επίλέξτε μία από τις παρακάτω διαθέσιμες Γλώσσες:",
-				"set": "Η γλώσσα της εφαρμογής άλλαξε στα Ελληνικά"
+				"set": "Η γλώσσα της εφαρμογής άλλαξε στα **Ελληνικά**"
 			},
 			"salesforce": {
 				"title": "Salesforce",
@@ -162,6 +167,7 @@
 				"management": {
 					"button": "Διαχείριση",
 					"title": "CIO Dashboard - Διαχείριση",
+					"text": "**CIO Dashboard - Διαχείριση** \n\n 2016 Κόστος YTD: **%s** \n\n vs Προυπολογισμό YTD: **%s** \n\n Διαφορά: **%s** \n\n Επίπεδο Service: **%s** \n\n Στόχος Επιπέδου Εξυπηρέτησης: **99.70** \n\n Διαφορά: **%s**",
 					"kpi1": "2016 Κόστος YTD",
 					"kpi2": "vs Προυπολογισμό YTD",
 					"kpi3": "Διαφορά",
@@ -172,6 +178,7 @@
 				"customer": {
 					"button": "Εξυπηρέτηση Πελατών",
 					"title": "CIO Dashboard - Customer Service",
+					"text": "**CIO Dashboard - Customer Service** \n\n Βαθμός YTD: **%s** \n\n Στόχος Βαθμού: **3.75** \n\n Διαφορά: **%s** \n\n Επιλυμμένα Τικέτα: **%s** \n\n Ανοικτά Τικέτα: **%s** \n\n Μέσος Όρος Επίλυσης (σε ώρες): **%s** \n\n Ωριαίος Στόχος Επίλυσης (σε ώρες): **%s** \n\n Διαφορά: **%s**",
 					"kpi1": "Βαθμός YTD",
 					"kpi2": "Στόχος Βαθμού",
 					"kpi3": "Διαφορά",
@@ -188,18 +195,21 @@
 				"highPriorityCases": {
 					"button": "Υψηλής Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Υψηλής Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Υψηλής Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Υψηλής Προτεραιότητας Υποθέσεις"
 				},
 				"mediumPriorityCases": {
 					"button": "Μέσης Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Μέσης Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Μέσης Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Μέσης Προτεραιότητας Υποθέσεις"
 				},
 				"lowPriorityCases": {
 					"button": "Χαμηλής Προτεραιότητας Υποθέσεις",
 					"title": "HelpDesk - Χαμηλής Προτεραιότητας Υποθέσεις",
+					"text": "Έχουμε **%s** από της Χαμηλής Προτεραιότητας Υποθέσεις",
 					"kpi1": "Έχουμε",
 					"kpi2": "από της Χαμηλής Προτεραιότητας Υποθέσεις"
 				}
@@ -207,88 +217,94 @@
 		},
 		"es": {
 			"title": "Español",
-			"welcome": "Hello %s and Welcome to Qlik Sense Bot.<br>Thanks for adding me into your contacts.<br>Type 'help' for all available commands.",
-			"viewDemo": "View Demo",
-			"actions": "Select one of the actions below:",
+			"welcome": "Hola %s bienvenido al Bot de Qlik Sense. <br> Gracias por añadirme a tus contactos.<br>Escribe 'help' para listar los comandos dispobibles.",
+			"viewDemo": "Ver Demo",
+			"actions": "Selecciona una de las siguientes acciones:",
 			"help": {
 				"title": "Help",
-				"text": "Please select one of the available apps below, or change your language."
+				"text": "Selecciona una de las apps disponibles o cambia el idioma del bot."
 			},
 			"language": {
-				"text": "Select one the below available languages:",
-				"set": "Your language has been set to English"
+				"button": "Idioma",
+				"text": "Selecciona uno de los idiomas:",
+				"set": "Se ha establecido el **Español** como idioma"
 			},
 			"salesforce": {
 				"title": "Salesforce",
-				"welcome": "Welcome to Salesforce",
+				"welcome": "Bienvenido a la app de Salesforce",
 				"dashboard": {
 					"button": "Dashboard",
 					"title": "Salesforce - Dashboard",
-					"text": "**Salesforce - Dashboard** \n\n OPEN OPPS VALUE: **%s** \n\n OPEN OPPS: **%s** \n\n NEW CUSTOMERS: **%s** \n\n EXISTING CUSTOMERS: **%s** \n\n WIN RATE: **%s**",
-					"kpi1": "OPEN OPPS VALUE",
-					"kpi2": "OPEN OPPS",
-					"kpi3": "NEW CUSTOMERS",
-					"kpi4": "EXISTING CUSTOMERS",
+					"text": "**Salesforce - Dashboard** \n\n IMPORTE OPORTUNIDADES ABIERTAS: **%s** \n\n NÚMERO DE OPORTUNIDADES ABIERTAS: **%s** \n\n NUEVOS CLIENTES: **%s** \n\n CLIENTES EXISTENTES: **%s** \n\n WIN RATE: **%s**",
+					"kpi1": "IMPORTE OPORTUNIDADES ABIERTAS",
+					"kpi2": "NÚMERO DE OPORTUNIDADES ABIERTAS",
+					"kpi3": "NUEVOS CLIENTES",
+					"kpi4": "CLIENTES EXISTENTES",
 					"kpi5": "WIN RATE"
 				},
 				"opportunities": {
 					"button": "Opportunities",
 					"title": "Salesforce - Opportunities",
-					"kpi1": "OPEN OPPS VALUE",
-					"kpi2": "OPEN OPPS",
-					"kpi3": "CLOSED WON OPPS VALUE",
-					"kpi4": "CLOSED WON OPPS",
-					"kpi5": "CLOSED LOST oPPS VALUE",
-					"kpi6": "CLOSED LOST OPPS",
+					"kpi1": "IMPORTE OPORTUNIDADES ABIERTAS",
+					"kpi2": "NÚMERO DE OPORTUNIDADES ABIERTAS",
+					"kpi3": "IMPORTE DE OPORTUNIDADES GANADAS",
+					"kpi4": "NÚMERO DE OPORTUNIDADES GANADAS",
+					"kpi5": "IMPORTE OPORTUNIDADES PERDIDAS",
+					"kpi6": "NÚMERO DE OPORTUNIDADES PERDIDAS",
 					"kpi7": "WIN RATE"
 				}
 			},
 			"cio": {
 				"title": "CIO Dashboard",
-				"welcome": "Welcome to CIO Dashboard",
+				"welcome": "Bienvenido a la app de CIO Dashboard",
 				"management": {
 					"button": "Management",
 					"title": "CIO Dashboard - Management",
-					"kpi1": "2016 Cost YTD",
-					"kpi2": "vs Budget YTD",
-					"kpi3": "Diff",
-					"kpi4": "Service Level",
-					"kpi5": "Service Level Goal",
-					"kpi6": "Diff"
+					"text": "**CIO Dashboard - Management** \n\n 2016 Cost YTD: **%s** \n\n vs Budget YTD: **%s** \n\n Diff: **%s** \n\n Service Level: **%s** \n\n Service Level Goal: **99.70** \n\n Diff: **%s**",
+					"kpi1": "2016 Coste YTD",
+					"kpi2": "vs Presupuesto YTD",
+					"kpi3": "Diferencia",
+					"kpi4": "Nivel de servicio",
+					"kpi5": "Objetivo de nivel de servicio",
+					"kpi6": "Diferencia"
 				},
 				"customer": {
 					"button": "Customer Service",
 					"title": "CIO Dashboard - Customer Service",
-					"kpi1": "Grade YTD",
-					"kpi2": "Grade Target",
-					"kpi3": "Diff",
-					"kpi4": "Resolved Tickets",
-					"kpi5": "Open Tickets",
-					"kpi6": "Avg Resolution Time (hrs)",
-					"kpi7": "Resolution Time Target (hrs)",
-					"kpi8": "Diff"
+					"text": "**CIO Dashboard - Customer Service** \n\n Valoración YTD: **%s** \n\n Objetivo Valoración: **3.75** \n\n Diferencia: **%s** \n\n Tickets resueltos: **%s** \n\n Tickets abiertos: **%s** \n\n Tiempo medio de resolución (hrs): **%s** \n\n Objetivo de tiempo medio de resolución (hrs): **%s** \n\n Diferencia: **%s**",
+					"kpi1": "Valoración YTD",
+					"kpi2": "Objetivo Valoración",
+					"kpi3": "Diferencia",
+					"kpi4": "Tickets resueltos",
+					"kpi5": "Tickets abiertos",
+					"kpi6": "Tiempo medio de resolución (hrs)",
+					"kpi7": "Objetivo de tiempo medio de resolución (hrs)",
+					"kpi8": "Diferencia"
 				}
 			},
 			"helpdesk": {
 				"title": "Helpdesk",
-				"welcome": "Welcome to HelpDesk. Click on a button or type any of the following commands: ",
+				"welcome": "Bienvenido a la app de HelpDesk. Seleccione en los botones o introduzca los siguientes comandos: ",
 				"highPriorityCases": {
-					"button": "High Priority Cases",
-					"title": "HelpDesk - High Priority Cases",
-					"kpi1": "We have",
-					"kpi2": "of High Priority Cases"
+					"button": "Casos prioridad alta",
+					"title": "HelpDesk - Casos prioridad alta",
+					"text": "Tenemos **%s** casos con prioridad Alta",
+					"kpi1": "Tenemos",
+					"kpi2": "casos con prioridad Alta"
 				},
 				"mediumPriorityCases": {
-					"button": "Medium Priority Cases",
-					"title": "HelpDesk - Medium Priority Cases",
-					"kpi1": "We have",
-					"kpi2": "of Medium Priority Cases"
+					"button": "Casos prioridad media",
+					"title": "HelpDesk - Casos prioridad media",
+					"text": "Tenemos **%s** casos con prioridad media",
+					"kpi1": "Tenemos",
+					"kpi2": "casos con prioridad media"
 				},
 				"lowPriorityCases": {
-					"button": "Low Priority Cases",
-					"title": "HelpDesk - Low Priority Cases",
-					"kpi1": "We have",
-					"kpi2": "of Low Priority Cases"
+					"button": "Casos prioridad baja",
+					"title": "HelpDesk - Casos prioridad baja",
+					"text": "Tenemos **%s** casos con prioridad baja",
+					"kpi1": "Tenemos",
+					"kpi2": "casos con prioridad baja"
 				}
 			}
 		}
