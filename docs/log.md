@@ -2,6 +2,7 @@
 
 ### Log
 
+- 1.2.2 Add Skype Readme and Change all Microsoft Routes
 - 1.2.1 Add Microsoft route
 - 1.2.0 Add Microsoft Model
 - 1.1.7 fixed telegram route issues. Added try catch everywhere. Added multilingual

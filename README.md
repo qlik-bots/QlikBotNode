@@ -1,7 +1,7 @@
 ![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01_200x200.png?raw=true "Qlik Sense Bot")
 
-[![version](http://img.shields.io/badge/version-1.1-brightgreen.svg?style=plastic)]()
-[![node](http://img.shields.io/badge/node->=7.0.0-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
+[![version](http://img.shields.io/badge/version-1.2.1-brightgreen.svg?style=plastic)]()
+[![node](http://img.shields.io/badge/node->=8.2.1-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
 [![npm](http://img.shields.io/badge/npm->=3.10.8-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
 [![MySql](http://img.shields.io/badge/MySql->=14-brightgreen.svg?style=plastic)](https://www.mysql.com/)
 
@@ -16,7 +16,7 @@
 
 Before continuing, make sure that you have these tools installed:
 
-- Node.js >= 7.0
+- Node.js >= 8.2.1
 - MySql >=14
 - Git bash if on Windows
 - Certificates for running https. If your environment is dev, then you can export from Qlik Sense Enterprise for "localhost" in a "Platform Independent PEM-format". Save them under app/server/certs/localhost/
@@ -70,7 +70,7 @@ This will start your server at https://localhost:3000
 
 ---
 - ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram](docs/Telegram.md)**
-- **MS Skype**
+- ![Microsoft Skype](/screenshots/skype/32x32.png?raw=true "Microsoft Skype") **[Microsoft Skype](docs/Skype.md)**
 - **MS Teams**
 - **MS Cortana**
 - **Slack**
