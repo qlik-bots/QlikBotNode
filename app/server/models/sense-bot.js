@@ -11,6 +11,7 @@ let site = {}
 site.logger = require('./utilities/Logger');
 site.enigma = require('./utilities/Enigma');
 // Page Models
-site.skype = require('./sense-bot/Skype')
+site.telegram = require('./sense-bot/Telegram')
+site.skype = require('./sense-bot/Microsoft')
 
 module.exports = site
