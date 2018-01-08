@@ -6,7 +6,7 @@
 */
 
 const express = require('express');
-const router = express.Router();
+const router = express.router();
 const path = require('path');
 
 // frontend routes =========================================================

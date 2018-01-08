@@ -5,11 +5,11 @@
  * Handle all of the https://{domain}/api/ routes
 */
 
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
-const senseBot = require('./api/sense-bot')
+const senseBot = require('./api/sense-bot');
 
-router.use('/sense-bot', senseBot)
+router.use('/sense-bot', senseBot);
 
 module.exports = router;

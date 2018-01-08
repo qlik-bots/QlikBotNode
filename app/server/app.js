@@ -8,9 +8,9 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
 const passport = require('passport');
-const session = require('express-session')
+const session = require('express-session');
 var uid = require('uid-safe'); // For Session Unique IDs
 
 /**
@@ -31,12 +31,12 @@ app.set('view engine', 'ejs');
  */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cookieParser())
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use(session({
 	genid: function () {
-		return uid.sync(18)	 // use UUIDs for session IDs 
+		return uid.sync(18); // use UUIDs for session IDs 
 	},
 	secret: 'keyboard cat',
 	resave: false,
@@ -47,7 +47,7 @@ app.use(session({
 		secure: false,
 		maxAge: null
 	}
-}))
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 
