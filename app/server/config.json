@@ -224,6 +224,10 @@
 				"title": "Help",
 				"text": "Selecciona una de las apps disponibles o cambia el idioma del bot."
 			},
+			"exit": {
+				"button": "Exit",
+				"text": "Goodbye!"
+			},
 			"language": {
 				"button": "Idioma",
 				"text": "Selecciona uno de los idiomas:",
