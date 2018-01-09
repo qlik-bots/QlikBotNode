@@ -10,7 +10,8 @@ let text = config.text.en;
 module.exports = function (bot, builder) {	
 	bot.dialog('helpdesk', async function (session) {
 		try {
-			text = config.text[session.preferredLocale()]
+			let sessionLanguage = session.preferredLocale().split('-')[0];
+			text = (config.text[sessionLanguage]) ? config.text[sessionLanguage] : config.text.en;
 			engine = await new site.enigma(qvf)
 			let msg = new builder.Message(session)
 				.attachmentLayout(builder.AttachmentLayout.list)

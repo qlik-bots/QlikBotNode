@@ -21,7 +21,8 @@ module.exports = (bot, builder) => {
 	*/	
 	bot.dialog('salesforce', async (session) => {
 		try {
-			text = config.text[session.preferredLocale()]
+			let sessionLanguage = session.preferredLocale().split('-')[0];
+			text = (config.text[sessionLanguage]) ? config.text[sessionLanguage] : config.text.en;
 			engine = await new site.enigma(qvf)
 			let msg = await new builder.Message(session);
 			msg.attachmentLayout(builder.AttachmentLayout.list)
