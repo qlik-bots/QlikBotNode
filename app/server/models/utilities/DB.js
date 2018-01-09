@@ -8,6 +8,7 @@
 
 const mysql = require('mysql');
 const logger = require('./Logger');
+// const util = require('util');
 
 const db = class {
 	constructor(input) {
@@ -20,11 +21,11 @@ const db = class {
 		}
 		try {
 			this.connection = mysql.createConnection(input);
-			let error = await this.connection.connect()
+			let error = await this.connection.connect();
 			if (!error) {
 				return true;
 			} else {
-				logger.error(`Error connecting to '${input.database}' db`, { Error: `${err}` });
+				logger.error(`Error connecting to '${input.database}' db`, { Error: `${error}` });
 				return error;
 			}
 		}		
@@ -55,10 +56,10 @@ const db = class {
 				});
 			}		
 			catch (error) {
-				site.logger.info(`error: ${error}`, { model: `models/utilities/DB::query()` });
-				reject(error)
+				logger.info(`error: ${error}`, { model: `models/utilities/DB::query()` });
+				reject(error);
 			}
-		})
+		});
 	}
 	async prepare(query) {
 		try {
@@ -79,19 +80,19 @@ const db = class {
 			return sql;
 		}		
 		catch (error) {
-			site.logger.info(`error: ${error}`, { model: `models/utilities/DB::prepare` });
+			logger.info(`error: ${error}`, { model: `models/utilities/DB::prepare` });
 			return error;
 		}
 	}
 	escape(query) {
 		try {
-			return mysql.escape(query)
+			return mysql.escape(query);
 		}		
 		catch (error) {
-			site.logger.info(`error: ${error}`, { model: `models/utilities/DB::escape` });
+			logger.info(`error: ${error}`, { model: `models/utilities/DB::escape` });
 			return error;
 		}
 	}
-}
+};
 
 module.exports = db;
