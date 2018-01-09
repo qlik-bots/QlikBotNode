@@ -54,17 +54,4 @@ app.use(passport.session());
 app.use('/api', api);
 app.use('/', routes);
 
-
-/**
- * production error handler
- * no stacktraces leaked to user
- */
-app.use(function (err, req, res) {
-	res.status(err.status || 500);
-	res.send({
-		success: false,
-		data: err.message
-	});
-});
-
 module.exports = app;
