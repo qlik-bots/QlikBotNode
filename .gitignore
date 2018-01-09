@@ -3,3 +3,6 @@ dist
 .tmp
 .sass-cache
 bower_components
+certs/localhost/
+logs/
+package-lock.json
