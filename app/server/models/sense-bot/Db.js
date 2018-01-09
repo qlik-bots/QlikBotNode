@@ -15,9 +15,9 @@ const db = class extends DbClass {
 		this.input = input;
 		this.config = {
 			host: 'localhost',
-			user: '',
-			password: '',
-			database: ''
+			user: 'sensebot',
+			password: '1234',
+			database: 'sensebot'
 		};
 	}
 	async get(query) {

@@ -1,5 +1,5 @@
 /**
- * @module models/sense-bot/Telegram
+ * @name Model: Telegram
  * @author yianni.ververis@qlik.com
  * @param {boolean} all - return all of the users in the Database
  * @param {integer} count - Return a total of all the users from the sql query
@@ -13,13 +13,12 @@
  * The main Model for all of the Microsoft Channels. Stores and retrieves users from the database
 */
 
-const DbClass = require('./Db')
+let DbClass = require('./Db');
 const logger = require('../utilities/Logger');
 
-
-const telegram = class {
+const Telegram = class {
 	constructor(input) {
-		this._input = input
+		this._input = input;
 	}
 	async userListing(_input) {
 		try {
@@ -28,29 +27,29 @@ const telegram = class {
 				all: (_input.all) ? true : false,
 				count: (_input.count) ? true : false,
 				userUid: (_input.userUid) ? _input.userUid : null,
-				limit: (_input.limit) ? String(_input.limit) : null,
-			}
+				limit: (_input.limit) ? String(_input.limit) : null
+			};
 			const sql = {
 				select: [],
 				from: ['user u'],
 				where: [],
 				order: [],
-				limit: [],
-			}
+				limit: []
+			};
 			if (input.all) {
-				sql.select.push('u.*')
+				sql.select.push('u.*');
 			}
 			if (input.userUid) {
-				sql.select.push('u.*')
-				sql.where.push(`u.user_uid='${input.userUid}'`)
+				sql.select.push('u.*');
+				sql.where.push(`u.user_uid='${input.userUid}'`);
 			}
 			if (input.limit) {
-				sql.limit.push(input.limit)
+				sql.limit.push(input.limit);
 			}
 			if (input.count) {
-				sql.select.push('COUNT(*) AS total')
+				sql.select.push('COUNT(*) AS total');
 			}
-			let results = await db.get(sql)
+			let results = await db.get(sql);
 			return results;
 		}	
 		catch (error) {
@@ -81,7 +80,7 @@ const telegram = class {
 					${input.userData}
 				)
 			`;
-			let results = await db.put(sql)
+			let results = await db.put(sql);
 			return results;
 		}	
 		catch (error) {
@@ -89,6 +88,6 @@ const telegram = class {
 			return error;
 		}
 	}
-}
+};
 
-module.exports = telegram;
+module.exports = Telegram;
