@@ -5,7 +5,7 @@
  * Salesforce Dialog with all of the commands
 */
 
-const site = require('../../../../models/sense-bot');
+const site = require('../../../../models/sense-bot')
 const config = require('../../../../config.json');
 let engine = null;
 const qvf = config.qvf.salesforce;
@@ -13,7 +13,52 @@ let text = config.text.en;
 
 module.exports = (bot, builder) => {
 	/**
-	 * Start the bot by visiting this page
+	 * Salesforce Main Screen
+	 * @function salesforce()
+	 * @param {string} message - The message to send to all users in the database.
+	 * @author yianni.ververis@qlik.com
+	 * 
+	*/	
+	bot.dialog('salesforce', async (session) => {
+		try {
+			text = config.text[session.preferredLocale()]
+			engine = await new site.enigma(qvf)
+			let msg = await new builder.Message(session);
+			msg.attachmentLayout(builder.AttachmentLayout.list)
+			msg.attachments([
+				new builder.HeroCard(session)
+					.title("Salesforce")
+					.subtitle('https://webapps.qlik.com/salesforce/index.html')
+					.text(text.actions)
+					.images([builder.CardImage.create(session, 'https://webapps.qlik.com/img/2017_salesforce.png')])
+					.buttons([
+						builder.CardAction.postBack(session, "dashboard", text.salesforce.dashboard.button),
+						builder.CardAction.postBack(session, "opportunities", text.salesforce.opportunities.button),
+						builder.CardAction.postBack(session, "exit", text.exit.button)
+					])
+			]);
+			switch (session.message.text.toLocaleLowerCase()) {
+				case 'dashboard':
+					return salesforceDashboard(session);
+					break;
+				case 'opportunities':
+					return salesforceOpportunities(session);
+					break;
+				default:
+					session.send(msg)
+					break;
+			}	
+			site.logger.info(`loaded`, { route: `api/sense-bot/microsoft::salesforce()` });
+		}
+		catch (error) {
+			site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::salesforce()` });
+		}
+	})
+		.triggerAction({ matches: /^salesforce$/i });
+	
+	
+	/**
+	 * Salesforce Dashboard with a list of KPIs
 	 * @function salesforceDashboard()
 	 * @param {string} message - The message to send to all users in the database.
 	 * @author yianni.ververis@qlik.com
@@ -29,13 +74,22 @@ module.exports = (bot, builder) => {
 				`num(Sum({<[Opportunity Won/Lost] = {'WON'}, [Opportunity Close Quarter/Year]={'$(vCurrentQ)'}>} Opportunity_Count)	/Sum({<[Opportunity Is Closed?]={'true'}, [Opportunity Close Quarter/Year]={'$(vCurrentQ)'}>} Opportunity_Count), '##%')`,
 			])
 			session.send(text.salesforce.dashboard.text, result[0][0].qText, result[1][0].qText, result[2][0].qText, result[3][0].qText, result[4][0].qText);
+			// session.endDialogWithResult();
 			site.logger.info(`loaded`, { route: `api/sense-bot/microsoft::salesforce-dashboard()` });
 		}
 		catch (error) {
+			// session.endDialog(`Error: ${error}`) // @TODO add generic error message to config
 			site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::salesforce-dashboard()` });
 		}
 	}
 	
+	/**
+	 * Salesforce Opportunities with a list of KPIs
+	 * @function salesforceOpportunities()
+	 * @param {string} message - The message to send to all users in the database.
+	 * @author yianni.ververis@qlik.com
+	 * 
+	*/	
 	async function salesforceOpportunities (session) {
 		try {
 			let result = await engine.kpiMulti([
@@ -53,54 +107,5 @@ module.exports = (bot, builder) => {
 		catch (error) {
 			site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::salesforce-opportunities()` });
 		}
-	}	
-
-	bot.dialog('salesforce', async (session) => {
-		try {
-			text = config.text[session.preferredLocale()];
-			engine = await new site.Enigma(qvf);
-			let msg = await new builder.Message(session);
-			msg.attachmentLayout(builder.AttachmentLayout.list);
-			msg.attachments([
-				new builder.HeroCard(session)
-					.title("Salesforce")
-					.subtitle('https://webapps.qlik.com/salesforce/index.html')
-					.text(text.actions)
-					.images([builder.CardImage.create(session, 'https://webapps.qlik.com/img/2017_salesforce.png')])
-					.buttons([
-						builder.CardAction.postBack(session, "dashboard", text.salesforce.dashboard.button),
-						builder.CardAction.postBack(session, "opportunities", text.salesforce.opportunities.button),
-						builder.CardAction.postBack(session, "chart-current-quarter", "Current Quarter Barchart"),
-						builder.CardAction.postBack(session, "chart-current-quarter-opportunities", "Current Quarter Opportunities Barchart"),
-						builder.CardAction.postBack(session, "exit", text.exit.button)
-					])
-			]);
-			switch (session.message.text.toLocaleLowerCase()) {
-				case 'dashboard':
-					return salesforceDashboard(session);
-					break;
-				case 'opportunities':
-					return salesforceOpportunities(session);
-					break;
-				case 'chart-current-quarter':
-					return salesforceChartCurrentQuarter(session);
-					break;
-				case 'chart-current-quarter-opportunities':
-					return salesforceChartCurrentQuarterOpportunities(session);
-					break;
-				case 'chart-webapps':
-					return salesforceChartWebapps(session);
-					break;
-				default:
-					session.send(msg);
-					break;
-			}	
-			site.logger.info(`loaded`, { route: `api/sense-bot/microsoft::salesforce()` });
-		}
-		catch (error) {
-			site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::salesforce()` });
-		}
-	})
-		.triggerAction({ matches: /^salesforce$/i });
-	
+	}
 }

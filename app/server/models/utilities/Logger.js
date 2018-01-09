@@ -24,7 +24,6 @@ var logger = new winston.Logger({
 			datePattern: 'yyyy-MM-dd.',
 			prepend: true,
 			handleExceptions: true,
-			// json: false,
 			maxsize: 1048576, //1MB
 			prettyPrint: true,
 			showLevel: false,
