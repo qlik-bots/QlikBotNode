@@ -3,6 +3,8 @@ dist
 .tmp
 .sass-cache
 bower_components
-app/server/certs/localhost/
-logs/
+app/server/certs/localhost/*
+!app/server/certs/localhost/.gitkeep
+logs/*
+!logs/.gitkeep
 package-lock.json
