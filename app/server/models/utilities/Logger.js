@@ -27,7 +27,7 @@ var logger = new winston.Logger({
 			maxsize: 1048576, //1MB
 			prettyPrint: true,
 			showLevel: false,
-			timestamp: function () { return timestamp },
+			timestamp: function () { return timestamp; },
 			level: 'debug' // { error: 0, warn: 1, info: 2, verbose: 3, debug: 4, silly: 5 }
 		}),
 		new winston.transports.Console({
