@@ -27,7 +27,7 @@
 		"no-use-before-define": 1,
 		"no-obj-calls": 2,
 		"no-unused-vars": 1,
-		"new-cap": 1,
+		"new-cap": [1, { "capIsNewExceptions": ["express.Router"] }],
 		"no-shadow": 0,
 		"strict": 0,
 		"no-invalid-regexp": 2,
