@@ -32,7 +32,9 @@ const Enigma = class {
 			this.session = enigma.create({
 				schema,
 				url: (this._input.appId) ? `wss://${this._input.host}/app/${this._input.appId}` : `wss://${this._input.host}/app/engineData`,
-				createSocket: url => new WebSocket(url)
+                createSocket: url => new WebSocket(url, {
+					rejectUnauthorized: false
+				}),
 			});
 			this.global = await this.session.open();
 			logger.log(`Connection openned: `, { model: `Enigma` });
@@ -42,7 +44,7 @@ const Enigma = class {
 			return true;
 		}
 		catch (error) {
-			logger.info(`error: ${error}`, { model: `models/webapps/Type::listing` });
+			logger.info(`error: ${error}`, { model: `models/utilities/Enigma::connect()` });
 			return error;
 		}
 	}
