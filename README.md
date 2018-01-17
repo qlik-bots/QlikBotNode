@@ -25,7 +25,7 @@ Before continuing, make sure that you have these tools installed:
 	- Helpdesk: This comes with every Qlik Sense Desktop installation. You will find it under C:\Users\{username}\Documents\Qlik\Sense\Apps\Helpdesk Management.qvf
 	- Salesforce: https://github.com/yianni-ververis/Salesforce/tree/master/Files
 	- CIO Dashboard: https://github.com/yianni-ververis/CIO/tree/master/Files
-- Once uploaded to the Qlik Sense Enterprise, get the app ids from the QMC and with the your host DNS put them in the app/server/config.js
+- Once uploaded to the Qlik Sense Enterprise, get the app ids from the QMC and with the your host DNS put them in the app/server/config.json
 
 And know at least some of these web technologies:
 
@@ -37,6 +37,7 @@ And know at least some of these web technologies:
 
 - To start, install all necessary packages
 ```javascript
+npm install -g gulp
 npm install
 ```
 
