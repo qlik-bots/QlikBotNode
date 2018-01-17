@@ -52,7 +52,6 @@ let bot = new builder.UniversalBot(connector, [async function (session) {
 		}
 		// Open Dialogs based on the text the user types
 		if (
-			session.message.text === "webapps" ||
 			session.message.text === "helpdesk" ||
 			session.message.text === "cio" ||
 			session.message.text === "salesforce" ||
@@ -134,7 +133,6 @@ require('./locale')(bot, builder);
 require('./salesforce')(bot, builder);
 require('./helpdesk')(bot, builder);
 require('./cio')(bot, builder);
-require('./webapps')(bot, builder);
 
 // SKYPE SENSE BOT POST MESSAGES
 router.post('/', connector.listen());
