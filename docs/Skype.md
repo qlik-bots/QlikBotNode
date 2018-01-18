@@ -31,7 +31,9 @@
 
 Thats it!
 
-For more Details on ![Register a bot with Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart-registration)
+For more Details on [Register a bot with Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart-registration "Register a bot with Bot Service")
+
+**Note:** for local testing you need to install the [BotFramework-Emulator](https://github.com/Microsoft/BotFramework-Emulator "BotFramework-Emulator"). Once installed, add in the Endpoint Url "https://localhost:3443/api/sense-bot/microsoft/"
 
 ### Usage
 
