@@ -9,9 +9,8 @@
 const logger = require('./Logger');
 const enigma = require('enigma.js');
 const WebSocket = require('ws');
-// const path = require('path');
-// const fs = require('fs');
-// const jwt = require('jsonwebtoken');
+const path = require('path');
+const fs = require('fs');
 const schema = require('enigma.js/schemas/12.20.0.json');
 
 const Enigma = class {
@@ -29,13 +28,33 @@ const Enigma = class {
 	}	
 	async connect() {
 		try {
-			this.session = enigma.create({
-				schema,
-				url: (this._input.appId) ? `wss://${this._input.host}/app/${this._input.appId}` : `wss://${this._input.host}/app/engineData`,
+            // Default for anonymous connection
+            let connectionSchema = {
+                schema,
+                url: (this._input.appId) ? `wss://${this._input.host}/app/${this._input.appId}` : `wss://${this._input.host}/app/engineData`,
                 createSocket: url => new WebSocket(url, {
-					rejectUnauthorized: false
-				}),
-			});
+                    rejectUnauthorized: false
+                }),
+            };
+            // Proceed with Authenticating a user
+            if (this._input.auth && this._input.userDirectory && this._input.userId) {
+                const certificatesPath = `../../certs/${this._input.host}/`;
+                const readCert = filename => fs.readFileSync(path.resolve(__dirname, certificatesPath, filename));
+                connectionSchema = {
+                    schema,
+                    url: `wss://${this._input.host}:4747/app/${this._input.appId}`,
+                    createSocket: url => new WebSocket(url, {
+                        rejectUnauthorized: false,
+                        ca: [readCert('root.pem')],
+                        key: readCert('client_key.pem'),
+                        cert: readCert('client.pem'),
+                        headers: {
+                            'X-Qlik-User': `UserDirectory=${encodeURIComponent(this._input.userDirectory)}; UserId=${encodeURIComponent(this._input.userId)}`,
+                        },
+                    }),
+                }
+            }
+            this.session = await enigma.create(connectionSchema);
 			this.global = await this.session.open();
 			logger.log(`Connection openned: `, { model: `Enigma` });
 			if (this._input.appId) {

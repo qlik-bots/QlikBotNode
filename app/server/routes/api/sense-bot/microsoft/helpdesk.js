@@ -72,7 +72,9 @@ module.exports = function (bot, builder) {
 		try {
 			let sessionLanguage = session.preferredLocale().split('-')[0];
 			text = (config.text[sessionLanguage]) ? config.text[sessionLanguage] : config.text.en;
-			engine = await new site.Enigma(qvf);
+            let input = qvf;
+            if (qvf.auth) input.userId = session.message.user.id;
+			engine = await new site.Enigma(input);
 			let msg = new builder.Message(session)
 				.attachmentLayout(builder.AttachmentLayout.list)
 				.attachments([

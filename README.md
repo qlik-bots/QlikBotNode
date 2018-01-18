@@ -1,6 +1,6 @@
 ![Qlik Sense Bot](/screenshots/general/qlik_sense_bot-V2-01_200x200.png?raw=true "Qlik Sense Bot")
 
-[![version](http://img.shields.io/badge/version-1.2.1-brightgreen.svg?style=plastic)]()
+[![version](http://img.shields.io/badge/version-1.3.0-brightgreen.svg?style=plastic)]()
 [![node](http://img.shields.io/badge/node->=8.2.1-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
 [![npm](http://img.shields.io/badge/npm->=3.10.8-brightgreen.svg?style=plastic)](https://nodejs.org/en/)
 [![MySql](http://img.shields.io/badge/MySql->=14-brightgreen.svg?style=plastic)](https://www.mysql.com/)
@@ -25,7 +25,9 @@ Before continuing, make sure that you have these tools installed:
 	- Helpdesk: This comes with every Qlik Sense Desktop installation. You will find it under C:\Users\{username}\Documents\Qlik\Sense\Apps\Helpdesk Management.qvf
 	- Salesforce: https://github.com/yianni-ververis/Salesforce/tree/master/Files
 	- CIO Dashboard: https://github.com/yianni-ververis/CIO/tree/master/Files
-- Once uploaded to the Qlik Sense Enterprise, get the app ids from the QMC and with the your host DNS put them in the app/server/config.json. Make sure that the apps are published.
+- Once uploaded to the Qlik Sense Enterprise, get the app ids from the QMC and with the your host DNS put them in the app/server/config.json. 
+    - Make sure that the apps are published.
+    - Make sure that the host name is the same as the folder name under your certs. Enigma.js will read the certs from there to connect to your engine and authenticate users.
 
 And know at least some of these web technologies:
 
@@ -70,8 +72,8 @@ This will start your server at https://localhost:3000
 ### Messaging Platforms
 
 ---
-- ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram](docs/Telegram.md)**
-- ![Microsoft Skype](/screenshots/skype/32x32.png?raw=true "Microsoft Skype") **[Microsoft Skype](docs/Skype.md)**
+- ![Telegram](/screenshots/telegram/32x32.png?raw=true "Telegram") **[Telegram - Setup & Usage](docs/Telegram.md)**
+- ![Microsoft Skype](/screenshots/skype/32x32.png?raw=true "Microsoft Skype - Setup & Usage") **[Microsoft Skype](docs/Skype.md)**
 - **MS Teams**
 - **MS Cortana**
 - **Slack**
