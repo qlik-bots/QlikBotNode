@@ -84,7 +84,7 @@ let shared = {
 		catch (error) {
 			site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::select()` });
 		}
-    },
+    }, 
     clear: async (session, field) => {
 		try {
             let msg = await shared.engine.clear(field);
