@@ -12,9 +12,10 @@ const site = require('../../../../models/sense-bot');
 const builder = require('botbuilder');
 const router = express.Router();
 const config = require('../../../../config.json');
+const shared = require('./shared');
 
 let lang = 'en';
-let engine = null;
+// let engine = null;
 
 // Create chat connector for communicating with the Bot Framework Service
 let connector = new builder.ChatConnector({
@@ -117,7 +118,7 @@ bot.on('conversationUpdate', function (message) {
 // Exit from all dialogs
 bot.dialog('exit', [function (session) {
 	try {
-		if (engine) { engine.disconnect(); }
+		if (shared.engine) { shared.engine.disconnect(); }
 		session.endDialog(config.text[lang].exit.text);
 		session.beginDialog('help');
 		site.logger.info(`loaded`, { route: `api/sense-bot/microsoft::exit()` });
@@ -128,6 +129,19 @@ bot.dialog('exit', [function (session) {
 }])
 	.triggerAction({ matches: /^exit$/i });
 
+// Exit from all dialogs
+bot.dialog('clearSelection', [function (session) {
+	try {
+		if (!shared.engine) { 'You need to be connected to an app to clear selections!' }
+		shared.engine.
+		site.logger.info(`loaded`, { route: `api/sense-bot/microsoft::clearedSelections()` });
+	}
+	catch (error) {
+		site.logger.info(`error: ${error}`, { route: `api/sense-bot/microsoft::clearedSelections()` });
+	}
+}])
+    .triggerAction({ matches: /^clear selections$/i });
+    
 require('./help')(bot, builder);
 require('./locale')(bot, builder);
 require('./salesforce')(bot, builder);

@@ -7,9 +7,10 @@
 
 const site = require('../../../../models/sense-bot');
 const config = require('../../../../config.json');
-let engine = null;
+// let engine = null;
 const qvf = config.qvf.salesforce;
 let text = config.text.en;
+const shared = require('./shared');
 
 module.exports = (bot, builder) => {
 	/**
@@ -21,7 +22,7 @@ module.exports = (bot, builder) => {
 	*/
 	async function salesforceDashboard(session) {
 		try {
-			let result = await engine.kpiMulti([
+			let result = await shared.engine.kpiMulti([
 				`Sum({<[Opportunity Open_Flag]={1}, [Opportunity Close Quarter/Year]={"$(vCurrentQ)"}>} [Opportunity Amount])`,
 				`Sum({<[Opportunity Open_Flag]={1}, [Opportunity Close Quarter/Year]={"$(vCurrentQ)"}>} Opportunity_Count)`,
 				`Sum({<[Opportunity Open_Flag]={1}, [Opportunity Type]={'New Customer'}, [Opportunity Close Quarter/Year]={"$(vCurrentQ)"}>} Opportunity_Count)`,
@@ -45,7 +46,7 @@ module.exports = (bot, builder) => {
 	*/
 	async function salesforceOpportunities(session) {
 		try {
-			let result = await engine.kpiMulti([
+			let result = await shared.engine.kpiMulti([
 				`num(Sum({<[Opportunity Triphase]={'OPEN'}>} [Opportunity Amount]),'$###,###,###')`,
 				`num(Sum({<[Opportunity Triphase]={'OPEN'}>} Opportunity_Count),'###,###,###')`,
 				`num(Sum({<[Opportunity Won/Lost]={'WON'}, [Opportunity Closed_Flag]={1}>} [Opportunity Amount]),'$###,###,###')`,
@@ -75,7 +76,7 @@ module.exports = (bot, builder) => {
 			text = (config.text[sessionLanguage]) ? config.text[sessionLanguage] : config.text.en;
             let input = qvf;
             if (qvf.auth) input.userId = session.message.user.id;
-			engine = await new site.Enigma(input);
+			shared.engine = await new site.Enigma(input);
 			let msg = await new builder.Message(session);
 			msg.attachmentLayout(builder.AttachmentLayout.list);
 			msg.attachments([

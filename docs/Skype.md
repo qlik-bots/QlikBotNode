@@ -46,5 +46,8 @@ For more Details on [Register a bot with Bot Service](https://docs.microsoft.com
 - If you want to change your language click on **"Language"** and select one of the available ones. So far we have only 3, English, Spanish and Greek but please feel free to add as many more as you want
 ![Change Language](/screenshots/skype/chat-language.png "Change Language")
 
--
+
+### Available Commands that you can also type
+
+- Once you select the app to connect to
 
