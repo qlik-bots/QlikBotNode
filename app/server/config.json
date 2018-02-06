@@ -1,19 +1,25 @@
 {
-	"title": "Demo Support Server",
-	"name": "supportserver",
-	"version": "1.0",
+	"title": "QlikBotNode",
+	"name": "qlikbotnode",
+	"version": "1.3.0",
 	"qvf": {
 		"helpdesk": {
 			"host": "",
-			"appId": ""
+			"appId": "",
+            "auth" : true,
+            "userDirectory": "QLIKBOTNODE"
 		},
 		"cio": {
 			"host": "",
-			"appId": ""
+			"appId": "",
+            "auth" : true,
+            "userDirectory": "QLIKBOTNODE"
 		},
 		"salesforce": {
 			"host": "",
-			"appId": ""
+			"appId": "",
+            "auth" : true,
+            "userDirectory": "QLIKBOTNODE"
 		}
 	},
 	"text": {

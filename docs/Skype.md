@@ -31,7 +31,9 @@
 
 Thats it!
 
-For more Details on ![Register a bot with Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart-registration)
+For more Details on [Register a bot with Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart-registration "Register a bot with Bot Service")
+
+**Note:** for local testing you need to install the [BotFramework-Emulator](https://github.com/Microsoft/BotFramework-Emulator "BotFramework-Emulator"). Once installed, add in the Endpoint Url "https://localhost:3443/api/sense-bot/microsoft/"
 
 ### Usage
 
@@ -44,5 +46,8 @@ For more Details on ![Register a bot with Bot Service](https://docs.microsoft.co
 - If you want to change your language click on **"Language"** and select one of the available ones. So far we have only 3, English, Spanish and Greek but please feel free to add as many more as you want
 ![Change Language](/screenshots/skype/chat-language.png "Change Language")
 
--
+
+### Available Commands that you can also type
+
+- Once you select the app to connect to
 
