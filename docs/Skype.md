@@ -25,7 +25,7 @@
 - Put the AppId and Password in your Environmental variables.
 	- For Windows, go to "Control Panel" -> "System" -> "Advanced System Settings" -> "Environment Variables"
 	- For Linux, from your directory (~), type "nano .bash_profile" or "vim .bash_profile" and enter the variables there like 
-		- export SKYPE_BOT_ID_SCV=''
+		- export SKYPE_BOT_ID_SVC=''
         - export SKYPE_BOT_PASSWORD_SVC=''
 - While still in settings, go to "channel" and add skype.
 
