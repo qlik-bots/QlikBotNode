@@ -17,7 +17,7 @@
 Before continuing, make sure that you have these tools installed:
 
 - Node.js >= 8.2.1
-- MySql >=14
+- MySql CE >=5 (https://dev.mysql.com/downloads/mysql/)
 - Git bash if on Windows
 - Certificates for running https. If your environment is dev, then you can export from Qlik Sense Enterprise for "localhost" in a "Platform Independent PEM-format". Save them under app/server/certs/localhost/
 ![Exporting Certificates with Sense](/screenshots/general/export-certificates.png?raw=true "Exporting Certificates with Sense")
