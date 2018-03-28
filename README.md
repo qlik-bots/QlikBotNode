@@ -50,6 +50,8 @@ npm install
 
 - For Database storage and mass Instant Messaging, create a database and run the files/sensebot.sql
 
+- Add your connection strings in the /app/server/config.json
+
 - Then, 
 	- for local testing, type gulp or,
 	- for production, run the server with [forever.js](https://github.com/foreverjs/forever) by typing 
