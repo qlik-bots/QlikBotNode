@@ -6,7 +6,8 @@
 
 ### Live Demo
 
-- The bot is currently under Microsoft review so the live demo is limited to only 100 people. 
+- You can add Qlik Sense Bot as a contact now by search for it.
+![Bot Search](/screenshots/skype/search-bot.png?raw=true "Bot Search")
 
 ### Installation
 
