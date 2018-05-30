@@ -6,8 +6,8 @@
 
 ### Live Demo
 
-- You can add Qlik Sense Bot as a contact now by search for it.
-![Bot Search](/screenshots/skype/search-bot.png?raw=true "Bot Search")
+- You can add Qlik Bot Node as a contact now by searching for it.
+- ![Bot Search](/screenshots/skype/search-bot.png?raw=true "Bot Search")
 
 ### Installation
 
