@@ -6,7 +6,7 @@
 
 ### Live Demo
 
-- You can add Qlik Bot Node as a contact now by searching for it. 
+- You can add "Qlik Bot Node" as a contact now by searching for it. 
 - ![Bot Search](/screenshots/skype/search-bot.png?raw=true "Bot Search")
 
 ### Installation
