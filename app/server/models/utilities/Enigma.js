@@ -327,6 +327,17 @@ const Enigma = class {
             logger.error(`error: ${JSON.stringify(error)}`, {model: `Enigma::getMeasure()`});
         }
     }
+
+    async getDimension(id) {
+        try {
+            await this.connect();
+            let measure = await this.app.getDimension(id);
+            let layout = await measure.getLayout();
+            return layout.qDim;
+        } catch (error) {
+            logger.error(`error: ${JSON.stringify(error)}`, {model: `Enigma::getDimension()`});
+        }
+    }
 };
 
 module.exports = Enigma;
