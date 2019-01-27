@@ -216,6 +216,24 @@ const Enigma = class {
                     layout = await list.getLayout();
                     return layout.qDimensionList.qItems;
 
+                case "MeasureList":
+                    obj = {
+                        "qInfo": {
+                            "qId": "",
+                            "qType": "MeasureList"
+                        },
+                        "qMeasureListDef": {
+                            "qType": "measure",
+                            "qData": {
+                                "title": "/qMetaDef/title",
+                                "tags": "/qMetaDef/tags"
+                            }
+                        }
+                    };
+                    list = await this.app.createSessionObject(obj);
+                    layout = await list.getLayout();
+                    return layout.qMeasureList.qItems;
+
                 case "SelectionObject":
                     obj = {
                         "qInfo": {
