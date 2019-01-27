@@ -202,11 +202,19 @@ const Enigma = class {
                             "qId": "",
                             "qType": "DimensionList"
                         },
-                        "qDimensionListDef": {}
+                        "qDimensionListDef": {
+                            "qType": "dimension",
+                            "qData": {
+                                "title": "/qMetaDef/title",
+                                "tags": "/qMetaDef/tags",
+                                "grouping": "/qDim/qGrouping",
+                                "info": "/qDimInfos"
+                            }
+                        }
                     };
                     list = await this.app.createSessionObject(obj);
                     layout = await list.getLayout();
-                    return layout;
+                    return layout.qDimensionList.qItems;
 
                 case "SelectionObject":
                     obj = {
